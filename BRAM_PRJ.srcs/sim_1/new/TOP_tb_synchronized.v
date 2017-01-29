@@ -30,12 +30,12 @@
      reg [63:0] data_in_left;
      reg [63:0] data_in_right;
      wire data_ack; 
-     wire [15:0] min_value_disparity_1;
-     wire [15:0] min_value_disparity_2;
-     wire [15:0] min_value_disparity_3; 
+     wire [63:0] min_value_disparity_1;
+     //wire [15:0] min_value_disparity_2;
+     //wire [15:0] min_value_disparity_3; 
      wire selection_finished_en;    
 TOP UUT(.reset(reset),.clk(clk),.data_available(data_available),.data_in_left(data_in_left),.data_in_right(data_in_right),.data_ack(data_ack),
-       .min_value_disparity_1_row(min_value_disparity_1),.min_value_disparity_2_row(min_value_disparity_2),.min_value_disparity_3_row(min_value_disparity_3),.selection_finished_en(selection_finished_en));                
+       .min_value_disparity_1_row(min_value_disparity_1),.selection_finished_en(selection_finished_en));//,.min_value_disparity_2_row(min_value_disparity_2),.min_value_disparity_3_row(min_value_disparity_3),.selection_finished_en(selection_finished_en));                
 integer i,j;
 integer in_left,row_left,col_left;
 integer in_right,row_right,col_right;

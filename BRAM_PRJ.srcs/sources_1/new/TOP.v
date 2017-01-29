@@ -27,9 +27,9 @@ module TOP(
            input wire [63:0] data_in_right,
            /////////////////////////////////////////////////////////////////////////
            output wire        data_ack, 
-           output wire [15:0] min_value_disparity_1_row,
-           output wire [15:0] min_value_disparity_2_row,
-           output wire [15:0] min_value_disparity_3_row,
+           output wire [63:0] min_value_disparity_1_row,
+           //output wire [15:0] min_value_disparity_2_row,
+           //output wire [15:0] min_value_disparity_3_row,
            output wire        selection_finished_en
 
     );
@@ -198,8 +198,8 @@ STORE_V_DISPARITY M2(
              .selection_finished(selection_finished)//output
 );
 assign  data_ack=data_ack_reg;
-assign  min_value_disparity_1_row=min_value_disparity_1_w;
-assign  min_value_disparity_2_row=min_value_disparity_2_w;
-assign  min_value_disparity_3_row=min_value_disparity_3_w;
+assign  min_value_disparity_1_row={{16{1'b0}},min_value_disparity_1_w,min_value_disparity_2_w,min_value_disparity_3_w};
+//assign  min_value_disparity_2_row=min_value_disparity_2_w;
+//assign  min_value_disparity_3_row=min_value_disparity_3_w;
 assign  selection_finished_en    = selection_finished;
 endmodule
