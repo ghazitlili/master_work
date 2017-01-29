@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Sun Jan 29 17:14:27 2017
+# Process ID: 7479
+# Current directory: /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.sim/sim_1/behav/xsim.dir/TOP_tb_synchronized_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.sim/sim_1/behav/webtalk.log
+# Journal file: /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.sim/sim_1/behav/xsim.dir/TOP_tb_synchronized_behav/webtalk/xsim_webtalk.tcl -notrace

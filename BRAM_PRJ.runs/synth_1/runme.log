@@ -1,0 +1,618 @@
+
+*** Running vivado
+    with args -log TOP.vds -m64 -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source TOP.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2015.2/Vivado/2015.2/data/ip'.
+Command: synth_design -top TOP -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -266 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1062.895 ; gain = 161.520 ; free physical = 1092 ; free virtual = 10831
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:21]
+	Parameter IDLE_STATE bound to: 5'b00001 
+	Parameter CYCLE1_STATE bound to: 5'b00010 
+	Parameter CYCLE2_STATE bound to: 5'b00100 
+	Parameter CYCLE3_STATE bound to: 5'b01000 
+	Parameter CYCLE4_STATE bound to: 5'b10000 
+	Parameter IDLE_CASE bound to: 5'bxxxx1 
+	Parameter CYCLE1_CASE bound to: 5'bxxx1x 
+	Parameter CYCLE2_CASE bound to: 5'bxx1xx 
+	Parameter CYCLE3_CASE bound to: 5'bx1xxx 
+	Parameter CYCLE4_CASE bound to: 5'b1xxxx 
+INFO: [Synth 8-638] synthesizing module 'DATA_PROCESS' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/DATA_PROCESS.v:23]
+INFO: [Synth 8-638] synthesizing module 'READ_FILE_BRAM' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/READ_FILE_BRAM.v:23]
+INFO: [Synth 8-638] synthesizing module 'BUFFER_ROW' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.runs/synth_1/.Xil/Vivado-32675-wks24.c3e.cs.tu-bs.de/realtime/BUFFER_ROW_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'BUFFER_ROW' (1#1) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.runs/synth_1/.Xil/Vivado-32675-wks24.c3e.cs.tu-bs.de/realtime/BUFFER_ROW_stub.v:7]
+WARNING: [Synth 8-689] width (4) of port connection 'wea' does not match port width (1) of module 'BUFFER_ROW' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/READ_FILE_BRAM.v:44]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (7) of module 'BUFFER_ROW' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/READ_FILE_BRAM.v:50]
+WARNING: [Synth 8-689] width (4) of port connection 'wea' does not match port width (1) of module 'BUFFER_ROW' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/READ_FILE_BRAM.v:57]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (7) of module 'BUFFER_ROW' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/READ_FILE_BRAM.v:63]
+INFO: [Synth 8-256] done synthesizing module 'READ_FILE_BRAM' (2#1) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/READ_FILE_BRAM.v:23]
+INFO: [Synth 8-638] synthesizing module 'statem' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:26]
+	Parameter IDLE_STATE bound to: 9'b000000001 
+	Parameter CYCLE1_STATE bound to: 9'b000000010 
+	Parameter CYCLE2_STATE bound to: 9'b000000100 
+	Parameter CYCLE3_STATE bound to: 9'b000001000 
+	Parameter CYCLE4_STATE bound to: 9'b000010000 
+	Parameter CYCLE5_STATE bound to: 9'b000100000 
+	Parameter CYCLE6_STATE bound to: 9'b001000000 
+	Parameter CYCLE7_STATE bound to: 9'b010000000 
+	Parameter CYCLE8_STATE bound to: 9'b100000000 
+	Parameter IDLE_CASE bound to: 9'bxxxxxxxx1 
+	Parameter CYCLE1_CASE bound to: 9'bxxxxxxx1x 
+	Parameter CYCLE2_CASE bound to: 9'bxxxxxx1xx 
+	Parameter CYCLE3_CASE bound to: 9'bxxxxx1xxx 
+	Parameter CYCLE4_CASE bound to: 9'bxxxx1xxxx 
+	Parameter CYCLE5_CASE bound to: 9'bxxx1xxxxx 
+	Parameter CYCLE6_CASE bound to: 9'bxx1xxxxxx 
+	Parameter CYCLE7_CASE bound to: 9'bx1xxxxxxx 
+	Parameter CYCLE8_CASE bound to: 9'b1xxxxxxxx 
+INFO: [Synth 8-638] synthesizing module 'MIN_8_bytes' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/MIN_8_bytes.v:23]
+INFO: [Synth 8-638] synthesizing module 'MIN' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/MIN.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MIN' (3#1) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/MIN.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MIN_8_bytes' (4#1) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/MIN_8_bytes.v:23]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:201]
+WARNING: [Synth 8-152] case item 9'bxxxxxxx1x overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+WARNING: [Synth 8-152] case item 9'bxxxxxx1xx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+WARNING: [Synth 8-152] case item 9'bxxxxx1xxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+WARNING: [Synth 8-152] case item 9'bxxxx1xxxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+WARNING: [Synth 8-152] case item 9'bxxx1xxxxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+WARNING: [Synth 8-152] case item 9'bxx1xxxxxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+WARNING: [Synth 8-152] case item 9'bx1xxxxxxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+WARNING: [Synth 8-152] case item 9'b1xxxxxxxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-256] done synthesizing module 'statem' (5#1) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:26]
+INFO: [Synth 8-256] done synthesizing module 'DATA_PROCESS' (6#1) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/DATA_PROCESS.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'en_write' does not match port width (4) of module 'DATA_PROCESS' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:173]
+INFO: [Synth 8-638] synthesizing module 'STORE_V_DISPARITY' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:23]
+	Parameter IDLE_STATE bound to: 5'b00001 
+	Parameter CYCLE1_STATE bound to: 5'b00010 
+	Parameter CYCLE2_STATE bound to: 5'b00100 
+	Parameter CYCLE3_STATE bound to: 5'b01000 
+	Parameter CYCLE4_STATE bound to: 5'b10000 
+	Parameter IDLE_CASE bound to: 5'bxxxx1 
+	Parameter CYCLE1_CASE bound to: 5'bxxx1x 
+	Parameter CYCLE2_CASE bound to: 5'bxx1xx 
+	Parameter CYCLE3_CASE bound to: 5'bx1xxx 
+	Parameter CYCLE4_CASE bound to: 5'b1xxxx 
+	Parameter IDLE_STATE_m2 bound to: 5'b00001 
+	Parameter CYCLE1_STATE_m2 bound to: 5'b00010 
+	Parameter CYCLE2_STATE_m2 bound to: 5'b00100 
+	Parameter CYCLE3_STATE_m2 bound to: 5'b01000 
+	Parameter CYCLE4_STATE_m2 bound to: 5'b10000 
+	Parameter IDLE_CASE_m2 bound to: 5'bxxxx1 
+	Parameter CYCLE1_CASE_m2 bound to: 5'bxxx1x 
+	Parameter CYCLE2_CASE_m2 bound to: 5'bxx1xx 
+	Parameter CYCLE3_CASE_m2 bound to: 5'bx1xxx 
+	Parameter CYCLE4_CASE_m2 bound to: 5'b1xxxx 
+INFO: [Synth 8-638] synthesizing module 'STORE_DISPARITY_IMAGE' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.runs/synth_1/.Xil/Vivado-32675-wks24.c3e.cs.tu-bs.de/realtime/STORE_DISPARITY_IMAGE_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'STORE_DISPARITY_IMAGE' (7#1) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.runs/synth_1/.Xil/Vivado-32675-wks24.c3e.cs.tu-bs.de/realtime/STORE_DISPARITY_IMAGE_stub.v:7]
+WARNING: [Synth 8-689] width (8) of port connection 'addra' does not match port width (7) of module 'STORE_DISPARITY_IMAGE' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:168]
+WARNING: [Synth 8-689] width (8) of port connection 'addrb' does not match port width (7) of module 'STORE_DISPARITY_IMAGE' [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:173]
+WARNING: [Synth 8-152] case item 5'bxxx1x overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:87]
+WARNING: [Synth 8-152] case item 5'bxx1xx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:87]
+WARNING: [Synth 8-152] case item 5'bx1xxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:87]
+WARNING: [Synth 8-152] case item 5'b1xxxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:87]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:197]
+WARNING: [Synth 8-152] case item 5'bxxx1x overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:208]
+WARNING: [Synth 8-152] case item 5'bxx1xx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:208]
+WARNING: [Synth 8-152] case item 5'bx1xxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:208]
+WARNING: [Synth 8-152] case item 5'b1xxxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:208]
+INFO: [Synth 8-256] done synthesizing module 'STORE_V_DISPARITY' (8#1) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/STORE_V_DISPARITY.v:23]
+WARNING: [Synth 8-152] case item 5'bxxx1x overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:92]
+WARNING: [Synth 8-152] case item 5'bxx1xx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:92]
+WARNING: [Synth 8-152] case item 5'bx1xxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:92]
+WARNING: [Synth 8-152] case item 5'b1xxxx overlaps with previous case item(s) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:92]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:151]
+WARNING: [Synth 8-3848] Net selection_min_values_finished in module/entity TOP does not have driver. [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:47]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (9#1) [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1116.184 ; gain = 214.809 ; free physical = 1038 ; free virtual = 10777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1116.184 ; gain = 214.809 ; free physical = 1037 ; free virtual = 10777
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1437.871 ; gain = 0.000 ; free physical = 855 ; free virtual = 10585
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1437.875 ; gain = 536.500 ; free physical = 853 ; free virtual = 10583
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1437.875 ; gain = 536.500 ; free physical = 853 ; free virtual = 10583
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for M1/MEM/BUFFER_LEFT. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for M1/MEM/BUFFER_RIGHT. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1437.875 ; gain = 536.500 ; free physical = 853 ; free virtual = 10583
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/references/VERILOG/tutorial/tutorial/project_1/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/sate_machine.v:208]
+INFO: [Synth 8-5546] ROM "row_finished" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d0_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "data_received" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "en_fsm_m2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "address_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_state_m2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in_adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "en_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "en_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "en_fsm" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "EDGE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1437.875 ; gain = 536.500 ; free physical = 839 ; free virtual = 10569
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   9 Input     24 Bit       Adders := 2     
+	   3 Input     24 Bit       Adders := 8     
+	   8 Input     24 Bit       Adders := 4     
+	   7 Input     24 Bit       Adders := 4     
+	   6 Input     24 Bit       Adders := 4     
+	   5 Input     24 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 12    
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 20    
+	               24 Bit    Registers := 17    
+	               16 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 140   
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	  10 Input     32 Bit        Muxes := 9     
+	  10 Input     24 Bit        Muxes := 16    
+	  10 Input     10 Bit        Muxes := 2     
+	  10 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 128   
+	  10 Input      8 Bit        Muxes := 161   
+	   6 Input      8 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      5 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 11    
+	   6 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   6 Input      7 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module MIN 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module statem 
+Detailed RTL Component Info : 
++---Adders : 
+	   9 Input     24 Bit       Adders := 2     
+	   3 Input     24 Bit       Adders := 8     
+	   8 Input     24 Bit       Adders := 4     
+	   7 Input     24 Bit       Adders := 4     
+	   6 Input     24 Bit       Adders := 4     
+	   5 Input     24 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 9     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               24 Bit    Registers := 16    
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 137   
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 9     
+	  10 Input     24 Bit        Muxes := 16    
+	  10 Input     10 Bit        Muxes := 2     
+	  10 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 128   
+	  10 Input      8 Bit        Muxes := 161   
+	   2 Input      3 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 11    
+Module STORE_V_DISPARITY 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      5 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1437.875 ; gain = 536.500 ; free physical = 839 ; free virtual = 10569
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "d0_" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row_finished" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "M2/mem_state_m2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in_adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "en_write" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.875 ; gain = 536.500 ; free physical = 839 ; free virtual = 10569
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.875 ; gain = 536.500 ; free physical = 839 ; free virtual = 10569
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M1/FSM /\mem_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M2/mem_state_m2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem_state_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (\mem_state_reg[1] ) is unused and will be removed from module statem.
+WARNING: [Synth 8-3332] Sequential element (\min_value_r_reg[31] ) is unused and will be removed from module statem.
+WARNING: [Synth 8-3332] Sequential element (\min_value_r_reg[30] ) is unused and will be removed from module statem.
+WARNING: [Synth 8-3332] Sequential element (\min_value_r_reg[29] ) is unused and will be removed from module statem.
+WARNING: [Synth 8-3332] Sequential element (\min_value_r_reg[28] ) is unused and will be removed from module statem.
+WARNING: [Synth 8-3332] Sequential element (\min_value_r_reg[27] ) is unused and will be removed from module statem.
+WARNING: [Synth 8-3332] Sequential element (\min_value_r_reg[26] ) is unused and will be removed from module statem.
+WARNING: [Synth 8-3332] Sequential element (\min_value_r_reg[25] ) is unused and will be removed from module statem.
+WARNING: [Synth 8-3332] Sequential element (\min_value_r_reg[24] ) is unused and will be removed from module statem.
+WARNING: [Synth 8-3332] Sequential element (\M2/mem_state_m2_reg[4] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\mem_state_reg[4] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][23] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][22] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][21] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][20] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][19] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][18] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][17] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][16] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][15] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][14] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][13] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][12] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][11] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][10] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][9] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][8] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][7] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][6] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][5] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][4] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][3] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][2] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][1] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[0][0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][23] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][22] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][21] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][20] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][19] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][18] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][17] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][16] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][15] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][14] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][13] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][12] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][11] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][10] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][9] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][8] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][7] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][6] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][5] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][4] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][3] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][2] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][1] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[1][0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][23] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][22] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][21] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][20] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][19] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][18] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][17] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][16] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][15] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][14] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][13] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][12] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][11] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][10] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][9] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][8] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][7] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][6] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][5] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][4] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][3] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][2] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][1] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M2/array_min_values_reg[2][0] ) is unused and will be removed from module TOP.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1437.879 ; gain = 536.504 ; free physical = 805 ; free virtual = 10490
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1437.879 ; gain = 536.504 ; free physical = 805 ; free virtual = 10490
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1437.879 ; gain = 536.504 ; free physical = 805 ; free virtual = 10490
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1462.875 ; gain = 561.500 ; free physical = 525 ; free virtual = 10370
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1463.871 ; gain = 562.496 ; free physical = 523 ; free virtual = 10368
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d0_reg[2] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d0_reg[1] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d0_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d1_reg[2] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d1_reg[1] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d1_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/difference_d1_reg[24] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d2_reg[2] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d2_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d2_reg[1] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/difference_d2_reg[25] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d3_reg[2] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d3_reg[1] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d3_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/difference_d3_reg[25] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/difference_d3_reg[24] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\M1/FSM/cnt_d4_reg[1] ) is unused and will be removed from module TOP.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1500.910 ; gain = 599.535 ; free physical = 488 ; free virtual = 10333
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1500.910 ; gain = 599.535 ; free physical = 488 ; free virtual = 10333
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1500.910 ; gain = 599.535 ; free physical = 488 ; free virtual = 10333
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1500.910 ; gain = 599.535 ; free physical = 488 ; free virtual = 10333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1500.910 ; gain = 599.535 ; free physical = 488 ; free virtual = 10333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1500.910 ; gain = 599.535 ; free physical = 488 ; free virtual = 10333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |BUFFER_ROW            |         2|
+|2     |STORE_DISPARITY_IMAGE |         1|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |BUFFER_ROW            |     1|
+|2     |BUFFER_ROW__1         |     1|
+|3     |STORE_DISPARITY_IMAGE |     1|
+|4     |BUFG                  |     1|
+|5     |CARRY4                |   298|
+|6     |LUT1                  |   238|
+|7     |LUT2                  |   245|
+|8     |LUT3                  |  1378|
+|9     |LUT4                  |   793|
+|10    |LUT5                  |   288|
+|11    |LUT6                  |   331|
+|12    |MUXF7                 |    32|
+|13    |FDCE                  |    35|
+|14    |FDPE                  |     4|
+|15    |FDRE                  |  1769|
+|16    |FDSE                  |   236|
+|17    |IBUF                  |   131|
+|18    |OBUF                  |    50|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |  5989|
+|2     |  M1     |DATA_PROCESS      |  5284|
+|3     |    FSM  |statem            |  3554|
+|4     |    MEM  |READ_FILE_BRAM    |  1728|
+|5     |  M2     |STORE_V_DISPARITY |   468|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1500.910 ; gain = 599.535 ; free physical = 488 ; free virtual = 10333
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 240 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1500.910 ; gain = 157.320 ; free physical = 488 ; free virtual = 10333
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1500.910 ; gain = 599.535 ; free physical = 488 ; free virtual = 10333
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 429 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1500.914 ; gain = 491.020 ; free physical = 488 ; free virtual = 10333
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1532.930 ; gain = 0.000 ; free physical = 486 ; free virtual = 10332
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 22 13:16:56 2016...

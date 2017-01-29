@@ -1,0 +1,63 @@
+QuestaSim vmap 10.4c_5 Lib Mapping Utility 2015.11 Nov 14 2015
+vmap xil_defaultlib msim/xil_defaultlib 
+Modifying modelsim.ini
+QuestaSim-64 vlog 10.4c_5 Compiler 2015.11 Nov 14 2015
+Start time: 12:35:46 on Sep 13,2016
+vlog -incr -work xil_defaultlib ./TOP_tb_synchronized_time_synth.v ./../../../../BRAM_PRJ.srcs/sim_1/new/READ_FILE_BRAM_TB.v ./../../../../BRAM_PRJ.srcs/sim_1/new/READ_FILE_TB_PAR.v ./../../../../BRAM_PRJ.srcs/sim_1/new/TB_tmp.v ./../../../../BRAM_PRJ.srcs/sim_1/new/tb_statem.v ./../../../../BRAM_PRJ.srcs/sim_1/new/Top_tb.v ./../../../../BRAM_PRJ.srcs/sim_1/new/M1_M2_tb.v ./../../../../BRAM_PRJ.srcs/sim_1/new/M1_M2_tb_select_points.v ./../../../../BRAM_PRJ.srcs/sim_1/new/TOP_tb_synchronized.v 
+-- Compiling module BUFFER_ROW
+-- Compiling module BUFFER_ROW_HD2
+-- Compiling module BUFFER_ROW_blk_mem_gen_generic_cstr
+-- Compiling module BUFFER_ROW_blk_mem_gen_generic_cstr_HD6
+-- Compiling module BUFFER_ROW_blk_mem_gen_prim_width
+-- Compiling module BUFFER_ROW_blk_mem_gen_prim_width_HD7
+-- Compiling module BUFFER_ROW_blk_mem_gen_prim_wrapper
+-- Compiling module BUFFER_ROW_blk_mem_gen_prim_wrapper_HD8
+-- Compiling module BUFFER_ROW_blk_mem_gen_top
+-- Compiling module BUFFER_ROW_blk_mem_gen_top_HD5
+-- Compiling module BUFFER_ROW_blk_mem_gen_v8_2
+-- Compiling module BUFFER_ROW_blk_mem_gen_v8_2_HD3
+-- Compiling module BUFFER_ROW_blk_mem_gen_v8_2_synth
+-- Compiling module BUFFER_ROW_blk_mem_gen_v8_2_synth_HD4
+-- Compiling module DATA_PROCESS
+-- Compiling module READ_FILE_BRAM
+-- Compiling module STORE_DISPARITY_IMAGE
+-- Compiling module STORE_DISPARITY_IMAGE_blk_mem_gen_generic_cstr
+-- Compiling module STORE_DISPARITY_IMAGE_blk_mem_gen_prim_width
+-- Compiling module STORE_DISPARITY_IMAGE_blk_mem_gen_prim_wrapper
+-- Compiling module STORE_DISPARITY_IMAGE_blk_mem_gen_top
+-- Compiling module STORE_DISPARITY_IMAGE_blk_mem_gen_v8_2
+-- Compiling module STORE_DISPARITY_IMAGE_blk_mem_gen_v8_2_synth
+-- Compiling module STORE_V_DISPARITY
+-- Compiling module TOP
+-- Compiling module statem
+-- Compiling module glbl
+-- Compiling module READ_FILE_BRAM_TB
+-- Compiling module READ_FILE_TB_PAR
+-- Compiling module tb_bram
+-- Compiling module tb_statem
+-- Compiling module Top_tb
+-- Compiling module M1_M2_tb
+-- Compiling module M1_M2_tb_select_points
+-- Compiling module TOP_tb_synchronized
+
+Top level modules:
+	glbl
+	READ_FILE_BRAM_TB
+	READ_FILE_TB_PAR
+	tb_bram
+	tb_statem
+	Top_tb
+	M1_M2_tb
+	M1_M2_tb_select_points
+	TOP_tb_synchronized
+End time: 12:35:47 on Sep 13,2016, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+QuestaSim vlog 10.4c_5 Compiler 2015.11 Nov 14 2015
+Start time: 12:35:47 on Sep 13,2016
+vlog -work xil_defaultlib glbl.v 
+-- Compiling module glbl
+
+Top level modules:
+	glbl
+End time: 12:35:47 on Sep 13,2016, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
