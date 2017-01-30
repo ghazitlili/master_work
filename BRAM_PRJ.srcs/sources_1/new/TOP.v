@@ -60,7 +60,7 @@ module TOP(
     reg          data_available_reg;
     reg          data_ack_reg;
     reg [6:0]    data_in_adr; 
-    reg [3:0]    en_write; 
+    reg          en_write; 
     reg [7:0]    rows_reg; 
     reg          en_fsm;
     //PARAMETERS
@@ -81,8 +81,8 @@ module TOP(
          
                   if(~reset)begin
                                 mem_state<= IDLE_STATE;
-                                data_in_adr<=7'b0000_000;
-                                en_write<=4'b0000;
+                                data_in_adr<=6'b000_000;
+                                en_write<=1'b0;
                                 en_fsm<=1'b0;
                                 rows_reg<=0;
                                end
@@ -98,15 +98,15 @@ module TOP(
                                      end
                           CYCLE1_CASE:begin//2
                                     
-                                    if     (data_in_adr ==80/*because we have 640 bytes divided by 8 bytes for each chunk of data */) begin    mem_state<=CYCLE3_STATE;data_in_adr<=8'b0000_000;en_write<=4'b0000;en_fsm<=1'b1;end// when the state machine finishes buffering the data it starts the v-disparity image processing
-                                    else if(rows_reg == 240/*because we have 240 rows*/)  begin    mem_state<= IDLE_STATE; data_in_adr<=8'b0000_000;end  // when the state machine ends writing all the rows it stops  
-                                    else                      begin    mem_state<=CYCLE2_STATE;en_write<=4'b0001;end         // continue writing
+                                    if     (data_in_adr ==80/*because we have 640 bytes divided by 8 bytes for each chunk of data */) begin    mem_state<=CYCLE3_STATE;data_in_adr<=6'b000_000;en_write<=1'b0;en_fsm<=1'b1;end// when the state machine finishes buffering the data it starts the v-disparity image processing
+                                    else if(rows_reg == 240/*because we have 240 rows*/)  begin    mem_state<= IDLE_STATE; data_in_adr<=6'b000_000;end  // when the state machine ends writing all the rows it stops  
+                                    else                      begin    mem_state<=CYCLE2_STATE;en_write<=1'b1;end         // continue writing
                                     data_ack_reg<=1'b0; 
                           end
                           CYCLE2_CASE:begin//4
                                    mem_state<=CYCLE1_STATE;  
-                                   data_in_adr<=data_in_adr+8'b0000_001; // increment the address
-                                   en_write<=4'b0000;
+                                   data_in_adr<=data_in_adr+6'b000_001; // increment the address
+                                   en_write<=1'b0;
                                    data_ack_reg<=1'b1;//acknowledge the  data           
                                       end
                           CYCLE3_CASE:begin//8

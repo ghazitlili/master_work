@@ -44,11 +44,11 @@ module STORE_V_DISPARITY(
 
 
 
-reg          [7:0]   address_in;
+reg          [6:0]   address_in;
 //reg                write_enable;
 reg                  read_enable;
 reg          [31:0]  data_in;
-reg          [7:0]   address_out;
+reg          [6:0]   address_out;
 reg                  en_fsm;
 reg                  en_fsm_m2;
 wire         [31:0]  data_out;
@@ -148,11 +148,11 @@ always@(posedge clk)begin
             min_value_r<= min_value;
             if(write_en_r)begin
             
-                     address_in<=  address_in+8'b0000_0001;
+                     address_in<=  address_in+6'b00_0001;
                      write_en_r<=1 'b0;
             end
             else if (mem_state==IDLE_STATE)begin
-                    address_in<=8'b0000_0000;
+                    address_in<='b00_0000;
             
             end
             else if(mem_state==CYCLE1_STATE)begin
@@ -212,7 +212,7 @@ always@(posedge clk or negedge reset_n) begin :fsm_select_min_values
                   
                       IDLE_CASE_m2:begin //1
                                    mem_state_m2<=(en_fsm_m2==1'b1)?CYCLE1_STATE_m2: IDLE_STATE_m2; 
-                                   address_out<=8'b0;
+                                   address_out<=6'b0;
                                    cmp_tmp_h<=min_value[23:0]+100;// he threshold  of selecting the disparity is 100 
 //                                   cmp_tmp_l<=min_value[23:0]-1000;
 //                                   en_fsm_m2<=1'b0;

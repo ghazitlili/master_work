@@ -25,14 +25,14 @@ module READ_FILE_BRAM(
             
   
             input   clk,
-            input  [3:0]    en_write,
+            input           en_write,
             input  [6 : 0]  data_in_adr,
             input  [63 : 0] data_in_left,
             input  [63 : 0] data_in_right,
             input           en_read,
             
-            input  [9 : 0]  data_out_adr_left,
-            input  [9 : 0]  data_out_adr_right,
+            input  [6 : 0]  data_out_adr_left,
+            input  [6 : 0]  data_out_adr_right,
             
             output [63 : 0] data_out_left,
             output [63 : 0] data_out_right    
