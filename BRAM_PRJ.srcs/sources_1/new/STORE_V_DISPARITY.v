@@ -104,7 +104,7 @@ always@(posedge clk or negedge reset_n) begin :fsm_memorize_disparities //this p
                                   end
                       CYCLE3_CASE:begin//8
 
-                           if     (address_in==128)  begin mem_state<=IDLE_STATE;  en_fsm_m2<=1'b1;   end// if all disparities are stored start selecting the min values by asserting en_fsm_m2
+                           if     (address_in==127)  begin mem_state<=IDLE_STATE;  en_fsm_m2<=1'b1;   end// if all disparities are stored start selecting the min values by asserting en_fsm_m2
                            else   if(cnt==7)         begin mem_state<=CYCLE4_STATE; end // when the disparities is written go and wait for the next disparities to be ready
                            else                      begin mem_state<=CYCLE1_STATE; end    // else keep writing
                            cnt<=cnt+1;
@@ -152,7 +152,7 @@ always@(posedge clk)begin
                      write_en_r<=1 'b0;
             end
             else if (mem_state==IDLE_STATE)begin
-                    address_in<='b00_0000;
+                    address_in<=6'b00_0000;
             
             end
             else if(mem_state==CYCLE1_STATE)begin

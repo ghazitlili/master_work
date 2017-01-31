@@ -60,11 +60,11 @@ ENTITY STORE_DISPARITY_IMAGE IS
   PORT (
     clka : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    addra : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     dina : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     clkb : IN STD_LOGIC;
     enb : IN STD_LOGIC;
-    addrb : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+    addrb : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     doutb : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END STORE_DISPARITY_IMAGE;
@@ -155,7 +155,7 @@ ARCHITECTURE STORE_DISPARITY_IMAGE_arch OF STORE_DISPARITY_IMAGE IS
       ena : IN STD_LOGIC;
       regcea : IN STD_LOGIC;
       wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      addra : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+      addra : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       dina : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       douta : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       clkb : IN STD_LOGIC;
@@ -163,7 +163,7 @@ ARCHITECTURE STORE_DISPARITY_IMAGE_arch OF STORE_DISPARITY_IMAGE IS
       enb : IN STD_LOGIC;
       regceb : IN STD_LOGIC;
       web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      addrb : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+      addrb : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       dinb : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       doutb : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       injectsbiterr : IN STD_LOGIC;
@@ -171,7 +171,7 @@ ARCHITECTURE STORE_DISPARITY_IMAGE_arch OF STORE_DISPARITY_IMAGE IS
       eccpipece : IN STD_LOGIC;
       sbiterr : OUT STD_LOGIC;
       dbiterr : OUT STD_LOGIC;
-      rdaddrecc : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+      rdaddrecc : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
       sleep : IN STD_LOGIC;
       deepsleep : IN STD_LOGIC;
       shutdown : IN STD_LOGIC;
@@ -212,7 +212,7 @@ ARCHITECTURE STORE_DISPARITY_IMAGE_arch OF STORE_DISPARITY_IMAGE IS
       s_axi_injectdbiterr : IN STD_LOGIC;
       s_axi_sbiterr : OUT STD_LOGIC;
       s_axi_dbiterr : OUT STD_LOGIC;
-      s_axi_rdaddrecc : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+      s_axi_rdaddrecc : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
     );
   END COMPONENT blk_mem_gen_v8_3_0;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -258,9 +258,9 @@ BEGIN
       C_WRITE_MODE_A => "NO_CHANGE",
       C_WRITE_WIDTH_A => 32,
       C_READ_WIDTH_A => 32,
-      C_WRITE_DEPTH_A => 128,
-      C_READ_DEPTH_A => 128,
-      C_ADDRA_WIDTH => 7,
+      C_WRITE_DEPTH_A => 256,
+      C_READ_DEPTH_A => 256,
+      C_ADDRA_WIDTH => 8,
       C_HAS_RSTB => 0,
       C_RST_PRIORITY_B => "CE",
       C_RSTRAM_B => 0,
@@ -272,9 +272,9 @@ BEGIN
       C_WRITE_MODE_B => "WRITE_FIRST",
       C_WRITE_WIDTH_B => 32,
       C_READ_WIDTH_B => 32,
-      C_WRITE_DEPTH_B => 128,
-      C_READ_DEPTH_B => 128,
-      C_ADDRB_WIDTH => 7,
+      C_WRITE_DEPTH_B => 256,
+      C_READ_DEPTH_B => 256,
+      C_ADDRB_WIDTH => 8,
       C_HAS_MEM_OUTPUT_REGS_A => 0,
       C_HAS_MEM_OUTPUT_REGS_B => 1,
       C_HAS_MUX_OUTPUT_REGS_A => 0,

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="STORE_DISPARITY_IMAGE_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1485197227">
-  <File Type="RDS-PROPCONSTRS" Name="STORE_DISPARITY_IMAGE_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="STORE_DISPARITY_IMAGE.tcl"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/STORE_DISPARITY_IMAGE_synth_1/STORE_DISPARITY_IMAGE_synth_1.psg"/>
-  <File Type="RDS-RDS" Name="STORE_DISPARITY_IMAGE.vds"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/STORE_DISPARITY_IMAGE_synth_1/sources.xml"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="STORE_DISPARITY_IMAGE_timing_summary_synth.rpt"/>
+<GenRun Id="STORE_DISPARITY_IMAGE_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1485898114">
   <File Type="VDS-TIMING-PB" Name="STORE_DISPARITY_IMAGE_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="STORE_DISPARITY_IMAGE_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="STORE_DISPARITY_IMAGE.dcp"/>
   <File Type="RDS-UTIL-PB" Name="STORE_DISPARITY_IMAGE_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="STORE_DISPARITY_IMAGE_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="STORE_DISPARITY_IMAGE_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="STORE_DISPARITY_IMAGE.vds"/>
+  <File Type="PA-TCL" Name="STORE_DISPARITY_IMAGE.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/STORE_DISPARITY_IMAGE_synth_1/STORE_DISPARITY_IMAGE_synth_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/STORE_DISPARITY_IMAGE_synth_1/sources.xml"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/STORE_DISPARITY_IMAGE_synth_1/constrs_in.xml"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/STORE_DISPARITY_IMAGE">
     <File Path="$PSRCDIR/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE.xci">

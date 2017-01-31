@@ -141,12 +141,14 @@ module axi_master #(
 );
 ////////////////////////////////////////////////////////////////////////////
 /////edge detection for enabling AWVALID signal it's a hack hope it works
-reg edge_en;
-reg edge_en_prev;
+reg  edge_en;
+reg  edge_en_prev;
 wire en;
+reg en_reg;
 always @(posedge M_AXI_ACLK)
 begin
-        edge_en_prev<=  en;
+        en_reg      <=    en;
+        edge_en_prev<=  en_reg;
         if({edge_en_prev,en}==2'b01)   begin
         
                        

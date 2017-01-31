@@ -187,6 +187,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="STORE_DISPARITY_IMAGE.xml"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="synth/STORE_DISPARITY_IMAGE.vhd"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="STORE_DISPARITY_IMAGE_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="sim/STORE_DISPARITY_IMAGE.vhd"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="blk_mem_gen_v8_3_0/simulation/blk_mem_gen_v8_3.vhd"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="summary.log"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="STORE_DISPARITY_IMAGE.veo"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="STORE_DISPARITY_IMAGE.vho"/>
+        <CompFileExtendedInfo CompFileName="STORE_DISPARITY_IMAGE.xci" FileRelPathName="doc/blk_mem_gen_v8_3_changelog.txt"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="STORE_DISPARITY_IMAGE"/>

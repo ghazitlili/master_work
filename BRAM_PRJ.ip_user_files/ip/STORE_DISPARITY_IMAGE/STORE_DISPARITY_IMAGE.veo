@@ -57,11 +57,11 @@
 STORE_DISPARITY_IMAGE your_instance_name (
   .clka(clka),    // input wire clka
   .wea(wea),      // input wire [0 : 0] wea
-  .addra(addra),  // input wire [6 : 0] addra
+  .addra(addra),  // input wire [7 : 0] addra
   .dina(dina),    // input wire [31 : 0] dina
   .clkb(clkb),    // input wire clkb
   .enb(enb),      // input wire enb
-  .addrb(addrb),  // input wire [6 : 0] addrb
+  .addrb(addrb),  // input wire [7 : 0] addrb
   .doutb(doutb)  // output wire [31 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------

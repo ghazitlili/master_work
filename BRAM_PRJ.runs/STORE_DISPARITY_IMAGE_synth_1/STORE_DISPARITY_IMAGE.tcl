@@ -14,8 +14,10 @@ set_property parent.project_path /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_P
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
+set_property ip_repo_paths /home/ghazi/Desktop/master_work/PACKAGES/MY_IP [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
 read_ip /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE.xci
+set_property used_in_implementation false [get_files -all /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE.dcp]
 set_property is_locked true [get_files /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE.xci]
 
 read_xdc dont_touch.xdc
