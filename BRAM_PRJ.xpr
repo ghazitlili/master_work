@@ -162,7 +162,7 @@
         <Option Name="TopModule" Val="TOP_tb_synchronized"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Option Name="xsim.simulate.runtime" Val="4us"/>
+        <Option Name="xsim.simulate.runtime" Val="1us"/>
         <Option Name="questa.simulate.runtime" Val="15.2ms"/>
         <Option Name="NLNetlistMode" Val="funcsim"/>
       </Config>

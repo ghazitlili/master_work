@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_labtool.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Feb  1 20:09:22 2017'>
+<webTalkData  fileName='usage_statistics_ext_labtool.xml'  majorVersion='1' minorVersion='0' timeStamp='Thu Feb  2 20:22:42 2017'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1368829" description="" />
-  <keyValuePair key="date_generated" value="Wed Feb  1 20:09:18 2017" description="" />
+  <keyValuePair key="date_generated" value="Thu Feb  2 20:22:37 2017" description="" />
   <keyValuePair key="os_platform" value="LIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2015.3 (64-bit)" description="" />
-  <keyValuePair key="project_id" value="85775a43-c44b-4880-a085-7caf82d3884d" description="" />
+  <keyValuePair key="project_id" value="2914e3de-4988-452e-9ed5-677e146a8cac" description="" />
   <keyValuePair key="project_iteration" value="1" description="" />
   <keyValuePair key="random_id" value="d3e90cd6-f9c8-4793-8ff5-473ebed9ed0f" description="" />
   <keyValuePair key="registration_id" value="211127209_0_0_020" description="" />
@@ -21,7 +21,7 @@
  <section name="user_environment" level="1" order="2" description="">
   <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i3 CPU       M 370  @ 2.40GHz" description="" />
   <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i3 CPU       M 370  @ 2.40GHz" description="" />
-  <keyValuePair key="cpu_speed" value="2394.000 MHz" description="" />
+  <keyValuePair key="cpu_speed" value="931.000 MHz" description="" />
   <keyValuePair key="cpu_speed" value="2394.000 MHz" description="" />
   <keyValuePair key="os_name" value="Ubuntu" description="" />
   <keyValuePair key="os_name" value="Ubuntu" description="" />

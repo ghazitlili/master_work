@@ -699,7 +699,7 @@ begin
       begin
         write_burst_counter <= 'b0;
       end
-    else if (M_AXI_AWREADY && axi_awvalid && en)
+    else if (M_AXI_AWREADY && axi_awvalid)
       begin
         if (write_burst_counter != C_TRANSACTIONS_NUM)
           begin

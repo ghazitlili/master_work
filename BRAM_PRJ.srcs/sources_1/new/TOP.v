@@ -46,6 +46,7 @@ module TOP(
     wire [31:0] min_value;  
     wire        row_finished; 
     wire        selection_finished;
+    reg         selection_finished_reg;
     reg [15:0] min_value_disparity_1_w; 
     reg [15:0] min_value_disparity_2_w; 
     reg [15:0] min_value_disparity_3_w; 
@@ -146,7 +147,8 @@ end
 /////////////////////////////////////////////////////////////////////////////////////////
 /*Block for arranging the min values */  
 always@(posedge clk)begin
-if(selection_finished==1'b1)begin
+selection_finished_reg<=selection_finished;
+if(selection_finished_reg==1'b1)begin
 min_value_disparity_1_w = {rows_reg,min_value_disparity_1};
 min_value_disparity_2_w = {rows_reg,min_value_disparity_2};
 min_value_disparity_3_w = {rows_reg,min_value_disparity_3};
@@ -201,5 +203,5 @@ assign  data_ack=data_ack_reg;
 assign  min_value_disparity_1_row={{16{1'b0}},min_value_disparity_1_w,min_value_disparity_2_w,min_value_disparity_3_w};
 //assign  min_value_disparity_2_row=min_value_disparity_2_w;
 //assign  min_value_disparity_3_row=min_value_disparity_3_w;
-assign  selection_finished_en    = selection_finished;
+assign  selection_finished_en    = selection_finished_reg;
 endmodule
