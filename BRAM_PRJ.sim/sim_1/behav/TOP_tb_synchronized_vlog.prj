@@ -17,6 +17,7 @@ verilog xil_defaultlib  "../../../BRAM_PRJ.srcs/sim_1/new/Top_tb.v"
 verilog xil_defaultlib  "../../../BRAM_PRJ.srcs/sim_1/new/M1_M2_tb.v"
 verilog xil_defaultlib  "../../../BRAM_PRJ.srcs/sim_1/new/M1_M2_tb_select_points.v"
 verilog xil_defaultlib  "../../../BRAM_PRJ.srcs/sim_1/new/TOP_tb_synchronized.v"
+verilog xil_defaultlib  "../../../BRAM_PRJ.srcs/sim_1/new/axi_interface_tb.v"
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD=/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.runs/STORE_DISPARITY_IMAGE_synth_1
+HD_PWD=/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.runs/STORE_DISPARITY_IMAGE_synth_1
 cd "$HD_PWD"
 
 HD_LOG=runme.log

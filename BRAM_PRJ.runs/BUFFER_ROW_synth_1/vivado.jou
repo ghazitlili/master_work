@@ -2,11 +2,11 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Mon Jan 23 19:47:08 2017
-# Process ID: 3064
-# Current directory: /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.runs/BUFFER_ROW_synth_1
+# Start of session at: Wed Feb  1 22:53:07 2017
+# Process ID: 13519
+# Current directory: /home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.runs/BUFFER_ROW_synth_1
 # Command line: vivado -log BUFFER_ROW.vds -mode batch -messageDb vivado.pb -notrace -source BUFFER_ROW.tcl
-# Log file: /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.runs/BUFFER_ROW_synth_1/BUFFER_ROW.vds
-# Journal file: /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.runs/BUFFER_ROW_synth_1/vivado.jou
+# Log file: /home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.runs/BUFFER_ROW_synth_1/BUFFER_ROW.vds
+# Journal file: /home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.runs/BUFFER_ROW_synth_1/vivado.jou
 #-----------------------------------------------------------
 source BUFFER_ROW.tcl -notrace

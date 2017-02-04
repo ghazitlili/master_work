@@ -47,8 +47,8 @@ module DATA_PROCESS(
     
 wire en_read;
 
-wire [6:0] data_out_adr_left;
-wire [6:0] data_out_adr_right;
+wire [9:0] data_out_adr_left;
+wire [9:0] data_out_adr_right;
 
 wire [63:0] data_out_left;
 wire [63:0] data_out_right;  

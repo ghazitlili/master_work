@@ -1,10 +1,10 @@
 // Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-// Date        : Mon Jan 23 19:49:52 2017
-// Host        : ghazi-Inspiron-N5010 running 64-bit Ubuntu 16.04 LTS
+// Date        : Wed Feb  1 22:56:03 2017
+// Host        : ghazi-Inspiron-N5010 running 64-bit Ubuntu 16.04.1 LTS
 // Command     : write_verilog -force -mode funcsim
-//               /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_sim_netlist.v
+//               /home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_sim_netlist.v
 // Design      : BUFFER_ROW
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

@@ -1,10 +1,10 @@
 -- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
--- Date        : Tue Jan 31 22:31:11 2017
+-- Date        : Wed Feb  1 22:58:54 2017
 -- Host        : ghazi-Inspiron-N5010 running 64-bit Ubuntu 16.04.1 LTS
 -- Command     : write_vhdl -force -mode funcsim
---               /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_sim_netlist.vhdl
+--               /home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_sim_netlist.vhdl
 -- Design      : STORE_DISPARITY_IMAGE
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,8 +21,8 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_prim_wrapper is
     clka : in STD_LOGIC;
     enb : in STD_LOGIC;
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
-    addrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    addrb : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    addra : in STD_LOGIC_VECTOR ( 6 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -142,11 +142,11 @@ begin
       WRITE_WIDTH_B => 36
     )
         port map (
-      ADDRARDADDR(13) => '0',
-      ADDRARDADDR(12 downto 5) => addrb(7 downto 0),
+      ADDRARDADDR(13 downto 12) => B"00",
+      ADDRARDADDR(11 downto 5) => addrb(6 downto 0),
       ADDRARDADDR(4 downto 0) => B"00000",
-      ADDRBWRADDR(13) => '0',
-      ADDRBWRADDR(12 downto 5) => addra(7 downto 0),
+      ADDRBWRADDR(13 downto 12) => B"00",
+      ADDRBWRADDR(11 downto 5) => addra(6 downto 0),
       ADDRBWRADDR(4 downto 0) => B"00000",
       CLKARDCLK => clkb,
       CLKBWRCLK => clka,
@@ -183,8 +183,8 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_prim_width is
     clka : in STD_LOGIC;
     enb : in STD_LOGIC;
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
-    addrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    addrb : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    addra : in STD_LOGIC_VECTOR ( 6 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -195,8 +195,8 @@ architecture STRUCTURE of STORE_DISPARITY_IMAGE_blk_mem_gen_prim_width is
 begin
 \prim_noinit.ram\: entity work.STORE_DISPARITY_IMAGE_blk_mem_gen_prim_wrapper
      port map (
-      addra(7 downto 0) => addra(7 downto 0),
-      addrb(7 downto 0) => addrb(7 downto 0),
+      addra(6 downto 0) => addra(6 downto 0),
+      addrb(6 downto 0) => addrb(6 downto 0),
       clka => clka,
       clkb => clkb,
       dina(31 downto 0) => dina(31 downto 0),
@@ -216,8 +216,8 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_generic_cstr is
     clka : in STD_LOGIC;
     enb : in STD_LOGIC;
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
-    addrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    addrb : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    addra : in STD_LOGIC_VECTOR ( 6 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -228,8 +228,8 @@ architecture STRUCTURE of STORE_DISPARITY_IMAGE_blk_mem_gen_generic_cstr is
 begin
 \ramloop[0].ram.r\: entity work.STORE_DISPARITY_IMAGE_blk_mem_gen_prim_width
      port map (
-      addra(7 downto 0) => addra(7 downto 0),
-      addrb(7 downto 0) => addrb(7 downto 0),
+      addra(6 downto 0) => addra(6 downto 0),
+      addrb(6 downto 0) => addrb(6 downto 0),
       clka => clka,
       clkb => clkb,
       dina(31 downto 0) => dina(31 downto 0),
@@ -249,8 +249,8 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_top is
     clka : in STD_LOGIC;
     enb : in STD_LOGIC;
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
-    addrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    addrb : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    addra : in STD_LOGIC_VECTOR ( 6 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -261,8 +261,8 @@ architecture STRUCTURE of STORE_DISPARITY_IMAGE_blk_mem_gen_top is
 begin
 \valid.cstr\: entity work.STORE_DISPARITY_IMAGE_blk_mem_gen_generic_cstr
      port map (
-      addra(7 downto 0) => addra(7 downto 0),
-      addrb(7 downto 0) => addrb(7 downto 0),
+      addra(6 downto 0) => addra(6 downto 0),
+      addrb(6 downto 0) => addrb(6 downto 0),
       clka => clka,
       clkb => clkb,
       dina(31 downto 0) => dina(31 downto 0),
@@ -282,8 +282,8 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0_synth is
     clka : in STD_LOGIC;
     enb : in STD_LOGIC;
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
-    addrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    addrb : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    addra : in STD_LOGIC_VECTOR ( 6 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -294,8 +294,8 @@ architecture STRUCTURE of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0_synth is
 begin
 \gnativebmg.native_blk_mem_gen\: entity work.STORE_DISPARITY_IMAGE_blk_mem_gen_top
      port map (
-      addra(7 downto 0) => addra(7 downto 0),
-      addrb(7 downto 0) => addrb(7 downto 0),
+      addra(6 downto 0) => addra(6 downto 0),
+      addrb(6 downto 0) => addrb(6 downto 0),
       clka => clka,
       clkb => clkb,
       dina(31 downto 0) => dina(31 downto 0),
@@ -315,7 +315,7 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 is
     ena : in STD_LOGIC;
     regcea : in STD_LOGIC;
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
-    addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    addra : in STD_LOGIC_VECTOR ( 6 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
     clkb : in STD_LOGIC;
@@ -323,7 +323,7 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 is
     enb : in STD_LOGIC;
     regceb : in STD_LOGIC;
     web : in STD_LOGIC_VECTOR ( 0 to 0 );
-    addrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    addrb : in STD_LOGIC_VECTOR ( 6 downto 0 );
     dinb : in STD_LOGIC_VECTOR ( 31 downto 0 );
     doutb : out STD_LOGIC_VECTOR ( 31 downto 0 );
     injectsbiterr : in STD_LOGIC;
@@ -331,7 +331,7 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 is
     eccpipece : in STD_LOGIC;
     sbiterr : out STD_LOGIC;
     dbiterr : out STD_LOGIC;
-    rdaddrecc : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    rdaddrecc : out STD_LOGIC_VECTOR ( 6 downto 0 );
     sleep : in STD_LOGIC;
     deepsleep : in STD_LOGIC;
     shutdown : in STD_LOGIC;
@@ -372,12 +372,12 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 is
     s_axi_injectdbiterr : in STD_LOGIC;
     s_axi_sbiterr : out STD_LOGIC;
     s_axi_dbiterr : out STD_LOGIC;
-    s_axi_rdaddrecc : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    s_axi_rdaddrecc : out STD_LOGIC_VECTOR ( 6 downto 0 )
   );
   attribute C_ADDRA_WIDTH : integer;
-  attribute C_ADDRA_WIDTH of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 8;
+  attribute C_ADDRA_WIDTH of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 7;
   attribute C_ADDRB_WIDTH : integer;
-  attribute C_ADDRB_WIDTH of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 8;
+  attribute C_ADDRB_WIDTH of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 7;
   attribute C_ALGORITHM : integer;
   attribute C_ALGORITHM of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 1;
   attribute C_AXI_ID_WIDTH : integer;
@@ -471,9 +471,9 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 is
   attribute C_PRIM_TYPE : integer;
   attribute C_PRIM_TYPE of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 1;
   attribute C_READ_DEPTH_A : integer;
-  attribute C_READ_DEPTH_A of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 256;
+  attribute C_READ_DEPTH_A of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 128;
   attribute C_READ_DEPTH_B : integer;
-  attribute C_READ_DEPTH_B of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 256;
+  attribute C_READ_DEPTH_B of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 128;
   attribute C_READ_WIDTH_A : integer;
   attribute C_READ_WIDTH_A of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 32;
   attribute C_READ_WIDTH_B : integer;
@@ -507,9 +507,9 @@ entity STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 is
   attribute C_WEB_WIDTH : integer;
   attribute C_WEB_WIDTH of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 1;
   attribute C_WRITE_DEPTH_A : integer;
-  attribute C_WRITE_DEPTH_A of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 256;
+  attribute C_WRITE_DEPTH_A of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 128;
   attribute C_WRITE_DEPTH_B : integer;
-  attribute C_WRITE_DEPTH_B of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 256;
+  attribute C_WRITE_DEPTH_B of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is 128;
   attribute C_WRITE_MODE_A : string;
   attribute C_WRITE_MODE_A of STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0 : entity is "NO_CHANGE";
   attribute C_WRITE_MODE_B : string;
@@ -562,7 +562,6 @@ begin
   douta(2) <= \<const0>\;
   douta(1) <= \<const0>\;
   douta(0) <= \<const0>\;
-  rdaddrecc(7) <= \<const0>\;
   rdaddrecc(6) <= \<const0>\;
   rdaddrecc(5) <= \<const0>\;
   rdaddrecc(4) <= \<const0>\;
@@ -582,7 +581,6 @@ begin
   s_axi_bresp(0) <= \<const0>\;
   s_axi_bvalid <= \<const0>\;
   s_axi_dbiterr <= \<const0>\;
-  s_axi_rdaddrecc(7) <= \<const0>\;
   s_axi_rdaddrecc(6) <= \<const0>\;
   s_axi_rdaddrecc(5) <= \<const0>\;
   s_axi_rdaddrecc(4) <= \<const0>\;
@@ -639,8 +637,8 @@ GND: unisim.vcomponents.GND
     );
 inst_blk_mem_gen: entity work.STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0_synth
      port map (
-      addra(7 downto 0) => addra(7 downto 0),
-      addrb(7 downto 0) => addrb(7 downto 0),
+      addra(6 downto 0) => addra(6 downto 0),
+      addrb(6 downto 0) => addrb(6 downto 0),
       clka => clka,
       clkb => clkb,
       dina(31 downto 0) => dina(31 downto 0),
@@ -657,11 +655,11 @@ entity STORE_DISPARITY_IMAGE is
   port (
     clka : in STD_LOGIC;
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
-    addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    addra : in STD_LOGIC_VECTOR ( 6 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     clkb : in STD_LOGIC;
     enb : in STD_LOGIC;
-    addrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    addrb : in STD_LOGIC_VECTOR ( 6 downto 0 );
     doutb : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
@@ -669,7 +667,7 @@ entity STORE_DISPARITY_IMAGE is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of STORE_DISPARITY_IMAGE : entity is "STORE_DISPARITY_IMAGE,blk_mem_gen_v8_3_0,{}";
   attribute core_generation_info : string;
-  attribute core_generation_info of STORE_DISPARITY_IMAGE : entity is "STORE_DISPARITY_IMAGE,blk_mem_gen_v8_3_0,{x_ipProduct=Vivado 2015.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=blk_mem_gen,x_ipVersion=8.3,x_ipCoreRevision=0,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,C_FAMILY=zynq,C_XDEVICEFAMILY=zynq,C_ELABORATION_DIR=./,C_INTERFACE_TYPE=0,C_AXI_TYPE=1,C_AXI_SLAVE_TYPE=0,C_USE_BRAM_BLOCK=0,C_ENABLE_32BIT_ADDRESS=0,C_CTRL_ECC_ALGO=NONE,C_HAS_AXI_ID=0,C_AXI_ID_WIDTH=4,C_MEM_TYPE=1,C_BYTE_SIZE=9,C_ALGORITHM=1,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=0,C_INIT_FILE_NAME=no_coe_file_loaded,C_INIT_FILE=STORE_DISPARITY_IMAGE.mem,C_USE_DEFAULT_DATA=0,C_DEFAULT_DATA=0,C_HAS_RSTA=0,C_RST_PRIORITY_A=CE,C_RSTRAM_A=0,C_INITA_VAL=0,C_HAS_ENA=0,C_HAS_REGCEA=0,C_USE_BYTE_WEA=0,C_WEA_WIDTH=1,C_WRITE_MODE_A=NO_CHANGE,C_WRITE_WIDTH_A=32,C_READ_WIDTH_A=32,C_WRITE_DEPTH_A=256,C_READ_DEPTH_A=256,C_ADDRA_WIDTH=8,C_HAS_RSTB=0,C_RST_PRIORITY_B=CE,C_RSTRAM_B=0,C_INITB_VAL=0,C_HAS_ENB=1,C_HAS_REGCEB=0,C_USE_BYTE_WEB=0,C_WEB_WIDTH=1,C_WRITE_MODE_B=WRITE_FIRST,C_WRITE_WIDTH_B=32,C_READ_WIDTH_B=32,C_WRITE_DEPTH_B=256,C_READ_DEPTH_B=256,C_ADDRB_WIDTH=8,C_HAS_MEM_OUTPUT_REGS_A=0,C_HAS_MEM_OUTPUT_REGS_B=1,C_HAS_MUX_OUTPUT_REGS_A=0,C_HAS_MUX_OUTPUT_REGS_B=0,C_MUX_PIPELINE_STAGES=0,C_HAS_SOFTECC_INPUT_REGS_A=0,C_HAS_SOFTECC_OUTPUT_REGS_B=0,C_USE_SOFTECC=0,C_USE_ECC=0,C_EN_ECC_PIPE=0,C_HAS_INJECTERR=0,C_SIM_COLLISION_CHECK=ALL,C_COMMON_CLK=0,C_DISABLE_WARN_BHV_COLL=1,C_EN_SLEEP_PIN=0,C_USE_URAM=0,C_EN_RDADDRA_CHG=0,C_EN_RDADDRB_CHG=0,C_EN_DEEPSLEEP_PIN=0,C_EN_SHUTDOWN_PIN=0,C_EN_SAFETY_CKT=0,C_DISABLE_WARN_BHV_RANGE=0,C_COUNT_36K_BRAM=0,C_COUNT_18K_BRAM=1,C_EST_POWER_SUMMARY=Estimated Power for IP     _     3.68295 mW}";
+  attribute core_generation_info of STORE_DISPARITY_IMAGE : entity is "STORE_DISPARITY_IMAGE,blk_mem_gen_v8_3_0,{x_ipProduct=Vivado 2015.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=blk_mem_gen,x_ipVersion=8.3,x_ipCoreRevision=0,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,C_FAMILY=zynq,C_XDEVICEFAMILY=zynq,C_ELABORATION_DIR=./,C_INTERFACE_TYPE=0,C_AXI_TYPE=1,C_AXI_SLAVE_TYPE=0,C_USE_BRAM_BLOCK=0,C_ENABLE_32BIT_ADDRESS=0,C_CTRL_ECC_ALGO=NONE,C_HAS_AXI_ID=0,C_AXI_ID_WIDTH=4,C_MEM_TYPE=1,C_BYTE_SIZE=9,C_ALGORITHM=1,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=0,C_INIT_FILE_NAME=no_coe_file_loaded,C_INIT_FILE=STORE_DISPARITY_IMAGE.mem,C_USE_DEFAULT_DATA=0,C_DEFAULT_DATA=0,C_HAS_RSTA=0,C_RST_PRIORITY_A=CE,C_RSTRAM_A=0,C_INITA_VAL=0,C_HAS_ENA=0,C_HAS_REGCEA=0,C_USE_BYTE_WEA=0,C_WEA_WIDTH=1,C_WRITE_MODE_A=NO_CHANGE,C_WRITE_WIDTH_A=32,C_READ_WIDTH_A=32,C_WRITE_DEPTH_A=128,C_READ_DEPTH_A=128,C_ADDRA_WIDTH=7,C_HAS_RSTB=0,C_RST_PRIORITY_B=CE,C_RSTRAM_B=0,C_INITB_VAL=0,C_HAS_ENB=1,C_HAS_REGCEB=0,C_USE_BYTE_WEB=0,C_WEB_WIDTH=1,C_WRITE_MODE_B=WRITE_FIRST,C_WRITE_WIDTH_B=32,C_READ_WIDTH_B=32,C_WRITE_DEPTH_B=128,C_READ_DEPTH_B=128,C_ADDRB_WIDTH=7,C_HAS_MEM_OUTPUT_REGS_A=0,C_HAS_MEM_OUTPUT_REGS_B=1,C_HAS_MUX_OUTPUT_REGS_A=0,C_HAS_MUX_OUTPUT_REGS_B=0,C_MUX_PIPELINE_STAGES=0,C_HAS_SOFTECC_INPUT_REGS_A=0,C_HAS_SOFTECC_OUTPUT_REGS_B=0,C_USE_SOFTECC=0,C_USE_ECC=0,C_EN_ECC_PIPE=0,C_HAS_INJECTERR=0,C_SIM_COLLISION_CHECK=ALL,C_COMMON_CLK=0,C_DISABLE_WARN_BHV_COLL=1,C_EN_SLEEP_PIN=0,C_USE_URAM=0,C_EN_RDADDRA_CHG=0,C_EN_RDADDRB_CHG=0,C_EN_DEEPSLEEP_PIN=0,C_EN_SHUTDOWN_PIN=0,C_EN_SAFETY_CKT=0,C_DISABLE_WARN_BHV_RANGE=0,C_COUNT_36K_BRAM=0,C_COUNT_18K_BRAM=1,C_EST_POWER_SUMMARY=Estimated Power for IP     _     3.68295 mW}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of STORE_DISPARITY_IMAGE : entity is "yes";
   attribute x_core_info : string;
@@ -690,17 +688,17 @@ architecture STRUCTURE of STORE_DISPARITY_IMAGE is
   signal NLW_U0_s_axi_wready_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_sbiterr_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_douta_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_U0_rdaddrecc_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_U0_rdaddrecc_UNCONNECTED : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal NLW_U0_s_axi_bid_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_U0_s_axi_bresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_U0_s_axi_rdaddrecc_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_U0_s_axi_rdaddrecc_UNCONNECTED : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal NLW_U0_s_axi_rdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_U0_s_axi_rid_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_U0_s_axi_rresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute C_ADDRA_WIDTH : integer;
-  attribute C_ADDRA_WIDTH of U0 : label is 8;
+  attribute C_ADDRA_WIDTH of U0 : label is 7;
   attribute C_ADDRB_WIDTH : integer;
-  attribute C_ADDRB_WIDTH of U0 : label is 8;
+  attribute C_ADDRB_WIDTH of U0 : label is 7;
   attribute C_ALGORITHM : integer;
   attribute C_ALGORITHM of U0 : label is 1;
   attribute C_AXI_ID_WIDTH : integer;
@@ -794,9 +792,9 @@ architecture STRUCTURE of STORE_DISPARITY_IMAGE is
   attribute C_PRIM_TYPE : integer;
   attribute C_PRIM_TYPE of U0 : label is 1;
   attribute C_READ_DEPTH_A : integer;
-  attribute C_READ_DEPTH_A of U0 : label is 256;
+  attribute C_READ_DEPTH_A of U0 : label is 128;
   attribute C_READ_DEPTH_B : integer;
-  attribute C_READ_DEPTH_B of U0 : label is 256;
+  attribute C_READ_DEPTH_B of U0 : label is 128;
   attribute C_READ_WIDTH_A : integer;
   attribute C_READ_WIDTH_A of U0 : label is 32;
   attribute C_READ_WIDTH_B : integer;
@@ -830,9 +828,9 @@ architecture STRUCTURE of STORE_DISPARITY_IMAGE is
   attribute C_WEB_WIDTH : integer;
   attribute C_WEB_WIDTH of U0 : label is 1;
   attribute C_WRITE_DEPTH_A : integer;
-  attribute C_WRITE_DEPTH_A of U0 : label is 256;
+  attribute C_WRITE_DEPTH_A of U0 : label is 128;
   attribute C_WRITE_DEPTH_B : integer;
-  attribute C_WRITE_DEPTH_B of U0 : label is 256;
+  attribute C_WRITE_DEPTH_B of U0 : label is 128;
   attribute C_WRITE_MODE_A : string;
   attribute C_WRITE_MODE_A of U0 : label is "NO_CHANGE";
   attribute C_WRITE_MODE_B : string;
@@ -849,8 +847,8 @@ architecture STRUCTURE of STORE_DISPARITY_IMAGE is
 begin
 U0: entity work.STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0
      port map (
-      addra(7 downto 0) => addra(7 downto 0),
-      addrb(7 downto 0) => addrb(7 downto 0),
+      addra(6 downto 0) => addra(6 downto 0),
+      addrb(6 downto 0) => addrb(6 downto 0),
       clka => clka,
       clkb => clkb,
       dbiterr => NLW_U0_dbiterr_UNCONNECTED,
@@ -864,7 +862,7 @@ U0: entity work.STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0
       enb => enb,
       injectdbiterr => '0',
       injectsbiterr => '0',
-      rdaddrecc(7 downto 0) => NLW_U0_rdaddrecc_UNCONNECTED(7 downto 0),
+      rdaddrecc(6 downto 0) => NLW_U0_rdaddrecc_UNCONNECTED(6 downto 0),
       regcea => '0',
       regceb => '0',
       rsta => '0',
@@ -894,7 +892,7 @@ U0: entity work.STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0
       s_axi_dbiterr => NLW_U0_s_axi_dbiterr_UNCONNECTED,
       s_axi_injectdbiterr => '0',
       s_axi_injectsbiterr => '0',
-      s_axi_rdaddrecc(7 downto 0) => NLW_U0_s_axi_rdaddrecc_UNCONNECTED(7 downto 0),
+      s_axi_rdaddrecc(6 downto 0) => NLW_U0_s_axi_rdaddrecc_UNCONNECTED(6 downto 0),
       s_axi_rdata(31 downto 0) => NLW_U0_s_axi_rdata_UNCONNECTED(31 downto 0),
       s_axi_rid(3 downto 0) => NLW_U0_s_axi_rid_UNCONNECTED(3 downto 0),
       s_axi_rlast => NLW_U0_s_axi_rlast_UNCONNECTED,

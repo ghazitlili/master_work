@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="STORE_DISPARITY_IMAGE_synth_1" LaunchDir="/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.runs/STORE_DISPARITY_IMAGE_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-

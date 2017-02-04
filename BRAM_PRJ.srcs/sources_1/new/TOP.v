@@ -26,11 +26,11 @@ module TOP(
            input wire [63:0] data_in_left,
            input wire [63:0] data_in_right,
            /////////////////////////////////////////////////////////////////////////
-           output wire        data_ack, 
+           output wire       data_ack, 
            output wire [63:0] min_value_disparity_1_row,
-           //output wire [15:0] min_value_disparity_2_row,
-           //output wire [15:0] min_value_disparity_3_row,
-           output wire        selection_finished_en
+           output wire        enable_axi_interface
+//           output wire [15:0] min_value_disparity_2_row,
+//           output wire [15:0] min_value_disparity_3_row
 
     );
 
@@ -46,7 +46,7 @@ module TOP(
     wire [31:0] min_value;  
     wire        row_finished; 
     wire        selection_finished;
-    reg         selection_finished_reg;
+    reg        selection_finished_reg;
     reg [15:0] min_value_disparity_1_w; 
     reg [15:0] min_value_disparity_2_w; 
     reg [15:0] min_value_disparity_3_w; 
@@ -82,7 +82,7 @@ module TOP(
          
                   if(~reset)begin
                                 mem_state<= IDLE_STATE;
-                                data_in_adr<=6'b000_000;
+                                data_in_adr<=7'b0000_000;
                                 en_write<=1'b0;
                                 en_fsm<=1'b0;
                                 rows_reg<=0;
@@ -99,14 +99,14 @@ module TOP(
                                      end
                           CYCLE1_CASE:begin//2
                                     
-                                    if     (data_in_adr ==80/*because we have 640 bytes divided by 8 bytes for each chunk of data */) begin    mem_state<=CYCLE3_STATE;data_in_adr<=6'b000_000;en_write<=1'b0;en_fsm<=1'b1;end// when the state machine finishes buffering the data it starts the v-disparity image processing
-                                    else if(rows_reg == 240/*because we have 240 rows*/)  begin    mem_state<= IDLE_STATE; data_in_adr<=6'b000_000;end  // when the state machine ends writing all the rows it stops  
+                                    if     (data_in_adr ==80/*because we have 640 bytes divided by 8 bytes for each chunk of data */) begin    mem_state<=CYCLE3_STATE;data_in_adr<=8'b0000_000;en_write<=1'b0;en_fsm<=1'b1;end// when the state machine finishes buffering the data it starts the v-disparity image processing
+                                    else if(rows_reg == 240/*because we have 240 rows*/)  begin    mem_state<= IDLE_STATE; data_in_adr<=8'b0000_000;end  // when the state machine ends writing all the rows it stops  
                                     else                      begin    mem_state<=CYCLE2_STATE;en_write<=1'b1;end         // continue writing
                                     data_ack_reg<=1'b0; 
                           end
                           CYCLE2_CASE:begin//4
                                    mem_state<=CYCLE1_STATE;  
-                                   data_in_adr<=data_in_adr+6'b000_001; // increment the address
+                                   data_in_adr<=data_in_adr+8'b0000_001; // increment the address
                                    en_write<=1'b0;
                                    data_ack_reg<=1'b1;//acknowledge the  data           
                                       end
@@ -147,7 +147,7 @@ end
 /////////////////////////////////////////////////////////////////////////////////////////
 /*Block for arranging the min values */  
 always@(posedge clk)begin
-selection_finished_reg<=selection_finished;
+selection_finished_reg <= selection_finished;
 if(selection_finished_reg==1'b1)begin
 min_value_disparity_1_w = {rows_reg,min_value_disparity_1};
 min_value_disparity_2_w = {rows_reg,min_value_disparity_2};
@@ -201,7 +201,7 @@ STORE_V_DISPARITY M2(
 );
 assign  data_ack=data_ack_reg;
 assign  min_value_disparity_1_row={{16{1'b0}},min_value_disparity_1_w,min_value_disparity_2_w,min_value_disparity_3_w};
+assign  enable_axi_interface     = selection_finished_reg;
 //assign  min_value_disparity_2_row=min_value_disparity_2_w;
 //assign  min_value_disparity_3_row=min_value_disparity_3_w;
-assign  selection_finished_en    = selection_finished_reg;
 endmodule

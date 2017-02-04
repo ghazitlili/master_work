@@ -16,7 +16,7 @@ INFO: [VRFC 10-311] analyzing module STORE_DISPARITY_IMAGE_blk_mem_gen_top
 INFO: [VRFC 10-311] analyzing module STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0
 INFO: [VRFC 10-311] analyzing module STORE_DISPARITY_IMAGE_blk_mem_gen_v8_3_0_synth
 INFO: [VRFC 10-311] analyzing module glbl
-WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_sim_netlist.v:837]
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_sim_netlist.v:835]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/MIN.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MIN
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/MIN_8_bytes.v" into library xil_defaultlib
@@ -31,7 +31,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghazi/Desktop/master_work/BRA
 INFO: [VRFC 10-311] analyzing module DATA_PROCESS
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TOP
-INFO: [VRFC 10-2458] undeclared symbol d_av, assumed default net type wire [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:176]
+INFO: [VRFC 10-2458] undeclared symbol d_av, assumed default net type wire [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/TOP.v:178]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/axi_master.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module axi_master
 INFO: [VRFC 10-2458] undeclared symbol DATA_MATCH, assumed default net type wire [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/new/axi_master.v:318]
@@ -52,6 +52,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghazi/Desktop/master_work/BRA
 INFO: [VRFC 10-311] analyzing module M1_M2_tb_select_points
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sim_1/new/TOP_tb_synchronized.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TOP_tb_synchronized
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sim_1/new/axi_interface_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_interface_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
 WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.sim/sim_1/behav/glbl.v:6]

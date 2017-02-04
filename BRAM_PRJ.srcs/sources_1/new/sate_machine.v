@@ -198,7 +198,7 @@ MIN_8_bytes MIN(.clk(clock),.in_0(sum_d0),.in_1(sum_d1),.in_2(sum_d2),.in_3(sum_
 always@(posedge clock or negedge reset_n) begin :fsm //this state machine computes the v-disparity image it computes 8 disparities every time
 
 
- log=$fopen("/home/ghazi/Desktop/master_work/matlab/image_rect_matlab/image_rect_matlab/log.txt","a");   
+ //log=$fopen("/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/matlab/image_rect_matlab/image_rect_matlab/log.txt","a");   
 
     if(~reset_n)
         mem_state<= IDLE_STATE;
@@ -614,17 +614,17 @@ always@(posedge clock or negedge reset_n) begin :fsm //this state machine comput
      end
 end
 
-always@(posedge clock) begin
-             if(en_fsm)begin
-                       i=i+1;
-                       if(row_finished)begin
+//always@(posedge clock) begin
+//             if(en_fsm)begin
+//                       i=i+1;
+//                       if(row_finished)begin
                        
-                            $display("total number of clocks seen is %d ",i); 
-                       end
-                       end
+//                            $display("total number of clocks seen is %d ",i); 
+//                       end
+//                       end
 
 
-end
+//end
 assign row_finished=(disparity == `MAX_DISPARITY-1)?1'b1:1'b0;
 assign addr_left=addr_r_left;
 assign addr_right=addr_r_right;

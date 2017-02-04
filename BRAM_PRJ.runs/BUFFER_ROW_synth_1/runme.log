@@ -12,19 +12,19 @@ source BUFFER_ROW.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ghazi/Documents/Vivado/2015.3/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_sim_netlist.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'BUFFER_ROW' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_sim_netlist.vhdl'. Please regenerate to continue.
 Command: synth_design -top BUFFER_ROW -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1074.082 ; gain = 206.008 ; free physical = 110 ; free virtual = 5635
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1067.176 ; gain = 206.008 ; free physical = 609 ; free virtual = 5568
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'BUFFER_ROW' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/synth/BUFFER_ROW.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'BUFFER_ROW' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/synth/BUFFER_ROW.vhd:72]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -98,8 +98,8 @@ INFO: [Synth 8-638] synthesizing module 'BUFFER_ROW' [/home/ghazi/Desktop/master
 	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     6.966099 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_0' declared at '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'U0' of component 'blk_mem_gen_v8_3_0' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/synth/BUFFER_ROW.vhd:234]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_0' declared at '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'U0' of component 'blk_mem_gen_v8_3_0' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/synth/BUFFER_ROW.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -173,7 +173,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/ghazi/Deskto
 	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     6.966099 mW - type: string 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -242,7 +242,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/ghazi/
 	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
@@ -313,22 +313,22 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/ghazi/Desktop/m
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -365,13 +365,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/ghazi/Deskt
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (1#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (1#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
@@ -445,7 +445,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/ghazi/
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
@@ -503,7 +503,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/ghazi/De
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 7 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
@@ -560,7 +560,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/ghazi/
 	Parameter C_MEM_ADDR_WIDTH_A bound to: 7 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 7 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16984]
+INFO: [Synth 8-3919] null assignment ignored [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16984]
 	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 1 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
@@ -736,15 +736,15 @@ INFO: [Synth 8-3919] null assignment ignored [/home/ghazi/Desktop/master_work/BR
 	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 0 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 72 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:17045]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper' (2#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
-WARNING: [Synth 8-3848] Net RSTA_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182740]
-WARNING: [Synth 8-3848] Net RSTB_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (3#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (4#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:17045]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper' (2#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+WARNING: [Synth 8-3848] Net RSTA_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182740]
+WARNING: [Synth 8-3848] Net RSTB_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182741]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (3#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (4#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_WRITE_WIDTH_A bound to: 64 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 64 - type: integer 
@@ -755,13 +755,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/ghazi/Desk
 	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_USE_ECC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (5#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (6#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0_synth' (7#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0' (8#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
-INFO: [Synth 8-256] done synthesizing module 'BUFFER_ROW' (9#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/synth/BUFFER_ROW.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (5#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (6#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0_synth' (7#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0' (8#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-256] done synthesizing module 'BUFFER_ROW' (9#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/synth/BUFFER_ROW.vhd:72]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:56 ; elapsed = 00:01:58 . Memory (MB): peak = 1244.145 ; gain = 376.070 ; free physical = 125 ; free virtual = 5296
+Finished RTL Elaboration : Time (s): cpu = 00:02:07 ; elapsed = 00:02:08 . Memory (MB): peak = 1237.238 ; gain = 376.070 ; free physical = 418 ; free virtual = 5378
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -770,24 +770,24 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[71] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[62] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[53] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[44] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[35] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[26] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[17] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[8] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[71] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[62] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[53] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[44] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[35] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[26] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[17] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[8] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[71] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[62] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[53] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[44] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[35] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[26] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[17] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[8] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[71] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[62] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[53] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[44] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[35] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[26] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[17] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[8] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:56 ; elapsed = 00:01:58 . Memory (MB): peak = 1244.145 ; gain = 376.070 ; free physical = 124 ; free virtual = 5295
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:07 ; elapsed = 00:02:08 . Memory (MB): peak = 1237.238 ; gain = 376.070 ; free physical = 419 ; free virtual = 5379
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -796,37 +796,37 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.runs/BUFFER_ROW_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.runs/BUFFER_ROW_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.runs/BUFFER_ROW_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.runs/BUFFER_ROW_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1327.160 ; gain = 0.000 ; free physical = 106 ; free virtual = 5227
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1320.254 ; gain = 0.000 ; free physical = 373 ; free virtual = 5331
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3200 
+INFO: Helper process launched with PID 13563 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:11 ; elapsed = 00:02:15 . Memory (MB): peak = 1327.160 ; gain = 459.086 ; free physical = 355 ; free virtual = 5233
+Finished Constraint Validation : Time (s): cpu = 00:02:23 ; elapsed = 00:02:24 . Memory (MB): peak = 1320.254 ; gain = 459.086 ; free physical = 366 ; free virtual = 5324
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:11 ; elapsed = 00:02:15 . Memory (MB): peak = 1327.160 ; gain = 459.086 ; free physical = 355 ; free virtual = 5233
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:23 ; elapsed = 00:02:24 . Memory (MB): peak = 1320.254 ; gain = 459.086 ; free physical = 366 ; free virtual = 5324
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:11 ; elapsed = 00:02:16 . Memory (MB): peak = 1327.160 ; gain = 459.086 ; free physical = 355 ; free virtual = 5233
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:23 ; elapsed = 00:02:24 . Memory (MB): peak = 1320.254 ; gain = 459.086 ; free physical = 367 ; free virtual = 5325
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:11 ; elapsed = 00:02:16 . Memory (MB): peak = 1327.160 ; gain = 459.086 ; free physical = 347 ; free virtual = 5225
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 1320.254 ; gain = 459.086 ; free physical = 367 ; free virtual = 5325
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -857,14 +857,14 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:11 ; elapsed = 00:02:16 . Memory (MB): peak = 1327.168 ; gain = 459.094 ; free physical = 346 ; free virtual = 5225
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 1320.262 ; gain = 459.094 ; free physical = 366 ; free virtual = 5324
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:16 . Memory (MB): peak = 1327.168 ; gain = 459.094 ; free physical = 346 ; free virtual = 5225
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 1320.262 ; gain = 459.094 ; free physical = 368 ; free virtual = 5326
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:02:11 ; elapsed = 00:02:16 . Memory (MB): peak = 1327.168 ; gain = 459.094 ; free physical = 346 ; free virtual = 5225
+Finished Parallel Reinference  : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 1320.262 ; gain = 459.094 ; free physical = 368 ; free virtual = 5326
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -875,9 +875,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:02:16 . Memory (MB): peak = 1327.168 ; gain = 459.094 ; free physical = 350 ; free virtual = 5229
+Finished Area Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 1320.262 ; gain = 459.094 ; free physical = 369 ; free virtual = 5327
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:02:12 ; elapsed = 00:02:16 . Memory (MB): peak = 1327.168 ; gain = 459.094 ; free physical = 350 ; free virtual = 5229
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 1320.262 ; gain = 459.094 ; free physical = 369 ; free virtual = 5327
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -891,24 +891,24 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:24 ; elapsed = 00:02:29 . Memory (MB): peak = 1370.160 ; gain = 502.086 ; free physical = 233 ; free virtual = 5120
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:38 ; elapsed = 00:02:40 . Memory (MB): peak = 1363.254 ; gain = 502.086 ; free physical = 326 ; free virtual = 5283
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:29 . Memory (MB): peak = 1370.160 ; gain = 502.086 ; free physical = 232 ; free virtual = 5120
+Finished Timing Optimization : Time (s): cpu = 00:02:38 ; elapsed = 00:02:40 . Memory (MB): peak = 1363.254 ; gain = 502.086 ; free physical = 326 ; free virtual = 5283
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:24 ; elapsed = 00:02:29 . Memory (MB): peak = 1370.160 ; gain = 502.086 ; free physical = 232 ; free virtual = 5120
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:38 ; elapsed = 00:02:40 . Memory (MB): peak = 1363.254 ; gain = 502.086 ; free physical = 326 ; free virtual = 5283
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:24 ; elapsed = 00:02:29 . Memory (MB): peak = 1370.160 ; gain = 502.086 ; free physical = 232 ; free virtual = 5120
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:38 ; elapsed = 00:02:40 . Memory (MB): peak = 1363.254 ; gain = 502.086 ; free physical = 325 ; free virtual = 5283
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:24 ; elapsed = 00:02:29 . Memory (MB): peak = 1380.176 ; gain = 512.102 ; free physical = 222 ; free virtual = 5110
+Finished Technology Mapping : Time (s): cpu = 00:02:38 ; elapsed = 00:02:40 . Memory (MB): peak = 1373.270 ; gain = 512.102 ; free physical = 315 ; free virtual = 5273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -932,7 +932,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1380.176 ; gain = 512.102 ; free physical = 222 ; free virtual = 5110
+Finished IO Insertion : Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 1373.270 ; gain = 512.102 ; free physical = 316 ; free virtual = 5274
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -945,7 +945,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1380.176 ; gain = 512.102 ; free physical = 222 ; free virtual = 5110
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 1373.270 ; gain = 512.102 ; free physical = 316 ; free virtual = 5274
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -957,25 +957,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1380.176 ; gain = 512.102 ; free physical = 222 ; free virtual = 5109
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 1373.270 ; gain = 512.102 ; free physical = 315 ; free virtual = 5273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1380.176 ; gain = 512.102 ; free physical = 222 ; free virtual = 5109
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 1373.270 ; gain = 512.102 ; free physical = 315 ; free virtual = 5273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1380.176 ; gain = 512.102 ; free physical = 221 ; free virtual = 5109
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:39 ; elapsed = 00:02:41 . Memory (MB): peak = 1373.270 ; gain = 512.102 ; free physical = 315 ; free virtual = 5273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1380.176 ; gain = 512.102 ; free physical = 221 ; free virtual = 5109
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:39 ; elapsed = 00:02:41 . Memory (MB): peak = 1373.270 ; gain = 512.102 ; free physical = 315 ; free virtual = 5273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1007,17 +1007,17 @@ Report Instance Areas:
 |7     |            \prim_noinit.ram          |blk_mem_gen_prim_wrapper |     1|
 +------+--------------------------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1380.176 ; gain = 512.102 ; free physical = 221 ; free virtual = 5109
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:39 ; elapsed = 00:02:41 . Memory (MB): peak = 1373.270 ; gain = 512.102 ; free physical = 315 ; free virtual = 5273
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 1380.176 ; gain = 289.344 ; free physical = 235 ; free virtual = 5123
-Synthesis Optimization Complete : Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1380.176 ; gain = 512.102 ; free physical = 235 ; free virtual = 5123
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:28 ; elapsed = 00:02:28 . Memory (MB): peak = 1373.270 ; gain = 289.344 ; free physical = 325 ; free virtual = 5282
+Synthesis Optimization Complete : Time (s): cpu = 00:02:40 ; elapsed = 00:02:41 . Memory (MB): peak = 1373.270 ; gain = 512.102 ; free physical = 325 ; free virtual = 5282
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/BUFFER_ROW/BUFFER_ROW_ooc.xdc] for cell 'U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
@@ -1025,7 +1025,7 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 53 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:24 ; elapsed = 00:02:29 . Memory (MB): peak = 1380.176 ; gain = 426.750 ; free physical = 236 ; free virtual = 5126
+synth_design: Time (s): cpu = 00:02:38 ; elapsed = 00:02:39 . Memory (MB): peak = 1373.270 ; gain = 426.750 ; free physical = 324 ; free virtual = 5282
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:01 . Memory (MB): peak = 1388.180 ; gain = 0.000 ; free physical = 228 ; free virtual = 5125
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 23 19:49:53 2017...
+report_utilization: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1381.273 ; gain = 0.000 ; free physical = 323 ; free virtual = 5281
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  1 22:56:03 2017...

@@ -4,5 +4,5 @@
   **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 
-source /home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Thu Feb  2 20:22:43 2017...
+source /home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb  4 17:44:45 2017...

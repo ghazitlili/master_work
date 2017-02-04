@@ -77,7 +77,7 @@ parameter [4:0]            //cases
           CYCLE3_CASE     =5'bx1xxx,
           CYCLE4_CASE     =5'b1xxxx;
 ////////////////////////////////////////////////////////////////////////////////
-integer log;integer i;
+integer log;
 //////////////////////////////////////////////////////////////////////////////         
 always@(posedge clk or negedge reset_n) begin :fsm_memorize_disparities //this part responsible for storing the vßdisparity values to bram.
      
@@ -156,7 +156,7 @@ always@(posedge clk)begin
             
             end
             else if(mem_state==CYCLE1_STATE)begin
-                     write_en_r<=1 'b1;
+                     write_en_r<=1'b1;
             
             end
             
@@ -196,7 +196,7 @@ parameter [4:0]            //cases
        
           
 always@(posedge clk or negedge reset_n) begin :fsm_select_min_values
-              log=$fopen("/home/ghazi/Desktop/master_work/matlab/image_rect_matlab/image_rect_matlab/disparity_values.txt","a");  
+              //log=$fopen("/afs/c3e.cs.tu-bs.de/home/gabbassi/Desktop/ghazi_abbassi/matlab/image_rect_matlab/image_rect_matlab/disparity_values.txt","a");  
               if(~reset_n)begin
                             mem_state_m2<= IDLE_STATE_m2;
                             array_min_values[0]<= 32'b0; 
@@ -212,7 +212,7 @@ always@(posedge clk or negedge reset_n) begin :fsm_select_min_values
                   
                       IDLE_CASE_m2:begin //1
                                    mem_state_m2<=(en_fsm_m2==1'b1)?CYCLE1_STATE_m2: IDLE_STATE_m2; 
-                                   address_out<=8'b0000_0000;
+                                   address_out<=8'b0;
                                    cmp_tmp_h<=min_value[23:0]+100;// he threshold  of selecting the disparity is 100 
 //                                   cmp_tmp_l<=min_value[23:0]-1000;
 //                                   en_fsm_m2<=1'b0;
@@ -220,8 +220,7 @@ always@(posedge clk or negedge reset_n) begin :fsm_select_min_values
                                     selection_finished_reg = 1'b0;
                                  end
                       CYCLE1_CASE_m2:begin//2// Start reading from the buffer 
-                                    mem_state_m2<=CYCLE2_STATE_m2; 
-                                    
+                                    mem_state_m2<=CYCLE2_STATE_m2;    
                                     read_enable<=1'b1;
 
                       end
@@ -240,15 +239,15 @@ always@(posedge clk or negedge reset_n) begin :fsm_select_min_values
                                   else begin
                                                 mem_state_m2<=CYCLE1_STATE_m2;
                                   end
-                                 if(data_out[23:0]<=cmp_tmp_h )begin// shift the min value into the the storing register if it is in the required range
+                                 if(data_out[23:0]<=cmp_tmp_h && data_out[23:0] != 32'b0)begin// shift the min value into the the storing register if it is in the required range
                                            array_min_values[0]<= data_out; 
                                            array_min_values[1]<= array_min_values[0];
                                            array_min_values[2]<= array_min_values[1];  
  
                                   end
-                                  if(address_out == 127)begin // this instruction writes the min values to a file
-                                     $fwrite(log,"%d\n%d\n%d\n",array_min_values[0][31:24],array_min_values[1][31:24],array_min_values[2][31:24]);
-                                  end
+//                                  if(address_out == 127)begin // this instruction writes the min values to a file
+//                                    $fwrite(log,"%d\n%d\n%d\n",array_min_values[0][31:24],array_min_values[1][31:24],array_min_values[2][31:24]);
+//                                  end
                                   address_out<=address_out+1;
                                    
 

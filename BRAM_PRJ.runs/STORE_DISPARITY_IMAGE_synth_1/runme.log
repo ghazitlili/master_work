@@ -10,21 +10,21 @@
 
 source STORE_DISPARITY_IMAGE.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ghazi/Desktop/master_work/PACKAGES/MY_IP'.
+INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ghazi/Documents/Vivado/2015.3/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_sim_netlist.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'STORE_DISPARITY_IMAGE' generated file not found '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_sim_netlist.vhdl'. Please regenerate to continue.
 Command: synth_design -top STORE_DISPARITY_IMAGE -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1067.180 ; gain = 206.008 ; free physical = 1325 ; free virtual = 6209
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1067.184 ; gain = 206.008 ; free physical = 597 ; free virtual = 5555
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'STORE_DISPARITY_IMAGE' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/synth/STORE_DISPARITY_IMAGE.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'STORE_DISPARITY_IMAGE' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/synth/STORE_DISPARITY_IMAGE.vhd:72]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -56,9 +56,9 @@ INFO: [Synth 8-638] synthesizing module 'STORE_DISPARITY_IMAGE' [/home/ghazi/Des
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 7 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -70,9 +70,9 @@ INFO: [Synth 8-638] synthesizing module 'STORE_DISPARITY_IMAGE' [/home/ghazi/Des
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 256 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 128 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 7 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -98,8 +98,8 @@ INFO: [Synth 8-638] synthesizing module 'STORE_DISPARITY_IMAGE' [/home/ghazi/Des
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.68295 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_0' declared at '/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'U0' of component 'blk_mem_gen_v8_3_0' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/synth/STORE_DISPARITY_IMAGE.vhd:234]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_0' declared at '/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:133' bound to instance 'U0' of component 'blk_mem_gen_v8_3_0' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/synth/STORE_DISPARITY_IMAGE.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -131,9 +131,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/ghazi/Deskto
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 7 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -145,9 +145,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/ghazi/Deskto
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 256 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 128 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 7 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -173,7 +173,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0' [/home/ghazi/Deskto
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.68295 mW - type: string 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -206,9 +206,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/ghazi/
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 7 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -220,9 +220,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/ghazi/
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 256 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 128 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 7 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -242,7 +242,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_3_0_synth' [/home/ghazi/
 	Parameter C_DISABLE_WARN_BHV_COLL bound to: 1 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
@@ -274,9 +274,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/ghazi/Desktop/m
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 128 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 7 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -290,9 +290,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/ghazi/Desktop/m
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 256 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 128 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 128 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 7 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -313,22 +313,22 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top' [/home/ghazi/Desktop/m
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:4803]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
@@ -341,8 +341,8 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/ghazi/Deskt
 	Parameter C_WEA_I_WIDTH bound to: 4 - type: integer 
 	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_WRITE_WIDTH_A_CORE bound to: 32 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
-	Parameter C_ADDRA_WIDTH_CORE bound to: 8 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 7 - type: integer 
+	Parameter C_ADDRA_WIDTH_CORE bound to: 7 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RSTB_WIDTH bound to: 2 - type: integer 
 	Parameter C_HAS_ENB bound to: 1 - type: integer 
@@ -353,8 +353,8 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/ghazi/Deskt
 	Parameter C_WEB_I_WIDTH bound to: 4 - type: integer 
 	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
 	Parameter C_WRITE_WIDTH_B_CORE bound to: 32 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
-	Parameter C_ADDRB_WIDTH_CORE bound to: 8 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 7 - type: integer 
+	Parameter C_ADDRB_WIDTH_CORE bound to: 7 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -365,13 +365,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block' [/home/ghazi/Deskt
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (1#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_input_block' (1#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187182]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193270]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193274]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193278]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193282]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193296]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
@@ -383,7 +383,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/ghazi/
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_PRIM_TYPE_i bound to: 1 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
-	Parameter C_USER_DEPTH bound to: 256 - type: integer 
+	Parameter C_USER_DEPTH bound to: 128 - type: integer 
 	Parameter C_TOTAL_PRIMS bound to: 1 - type: integer 
 	Parameter C_DEPTH_RESOLUTION bound to: 512 - type: integer 
 	Parameter C_START_WIDTH bound to: 320000'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
@@ -411,7 +411,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/ghazi/
 	Parameter C_RATIO_WA bound to: 1 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_RATIO_RA bound to: 1 - type: integer 
-	Parameter C_ADDR_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_ADDR_WIDTH_A bound to: 7 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RSTB_WIDTH bound to: 2 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
@@ -427,7 +427,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/ghazi/
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
-	Parameter C_ADDR_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_ADDR_WIDTH_B bound to: 7 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -445,7 +445,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr' [/home/ghazi/
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
@@ -456,7 +456,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/ghazi/De
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
-	Parameter C_USER_DEPTH bound to: 256 - type: integer 
+	Parameter C_USER_DEPTH bound to: 128 - type: integer 
 	Parameter C_START_WIDTH bound to: 0 - type: integer 
 	Parameter C_START_DEPTH bound to: 0 - type: integer 
 	Parameter C_PRIM_WIDTH bound to: 36 - type: integer 
@@ -476,7 +476,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/ghazi/De
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
 	Parameter C_RATIO_WA bound to: 1 - type: integer 
 	Parameter C_RATIO_RA bound to: 1 - type: integer 
-	Parameter C_ADDR_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_ADDR_WIDTH_A bound to: 7 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -486,7 +486,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/ghazi/De
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_RATIO_WB bound to: 1 - type: integer 
 	Parameter C_RATIO_RB bound to: 1 - type: integer 
-	Parameter C_ADDR_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_ADDR_WIDTH_B bound to: 7 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -499,11 +499,11 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width' [/home/ghazi/De
 	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
 	Parameter C_COMMON_CLK bound to: 0 - type: integer 
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
-	Parameter C_MEM_ADDR_WIDTH_A bound to: 8 - type: integer 
-	Parameter C_MEM_ADDR_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_MEM_ADDR_WIDTH_A bound to: 7 - type: integer 
+	Parameter C_MEM_ADDR_WIDTH_B bound to: 7 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
@@ -512,7 +512,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/ghazi/
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_USER_WIDTH bound to: 32 - type: integer 
-	Parameter C_USER_DEPTH bound to: 256 - type: integer 
+	Parameter C_USER_DEPTH bound to: 128 - type: integer 
 	Parameter C_START_WIDTH bound to: 0 - type: integer 
 	Parameter C_START_DEPTH bound to: 0 - type: integer 
 	Parameter C_PRIM_WIDTH bound to: 36 - type: integer 
@@ -557,10 +557,10 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper' [/home/ghazi/
 	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
 	Parameter C_COMMON_CLK bound to: 0 - type: integer 
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
-	Parameter C_MEM_ADDR_WIDTH_A bound to: 8 - type: integer 
-	Parameter C_MEM_ADDR_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_MEM_ADDR_WIDTH_A bound to: 7 - type: integer 
+	Parameter C_MEM_ADDR_WIDTH_B bound to: 7 - type: integer 
 	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16048]
+INFO: [Synth 8-3919] null assignment ignored [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16048]
 	Parameter DOA_REG bound to: 1 - type: integer 
 	Parameter DOB_REG bound to: 1 - type: integer 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -660,32 +660,32 @@ INFO: [Synth 8-3919] null assignment ignored [/home/ghazi/Desktop/master_work/BR
 	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 0 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 36 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB18E1' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16091]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper' (2#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
-WARNING: [Synth 8-3848] Net RSTA_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182740]
-WARNING: [Synth 8-3848] Net RSTB_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (3#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (4#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB18E1' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:16091]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper' (2#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:6987]
+WARNING: [Synth 8-3848] Net RSTA_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182740]
+WARNING: [Synth 8-3848] Net RSTB_BUSY in module/entity blk_mem_gen_prim_width does not have driver. [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182741]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width' (3#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:182885]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:185950]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:186103]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr' (4#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:184458]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block' [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_A_CORE bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B_CORE bound to: 32 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 7 - type: integer 
 	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
 	Parameter C_USE_ECC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (5#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (6#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0_synth' (7#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0' (8#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
-INFO: [Synth 8-256] done synthesizing module 'STORE_DISPARITY_IMAGE' (9#1) [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/synth/STORE_DISPARITY_IMAGE.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block' (5#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:187787]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top' (6#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:192741]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0_synth' (7#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:193780]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_3_0' (8#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3.vhd:277]
+INFO: [Synth 8-256] done synthesizing module 'STORE_DISPARITY_IMAGE' (9#1) [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/synth/STORE_DISPARITY_IMAGE.vhd:72]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 1237.242 ; gain = 376.070 ; free physical = 1131 ; free virtual = 6018
+Finished RTL Elaboration : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 1237.246 ; gain = 376.070 ; free physical = 417 ; free virtual = 5376
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -694,16 +694,16 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[35] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[26] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[17] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[8] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[35] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[26] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[17] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
-INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[8] to constant 0 [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[35] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[26] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[17] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[8] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[35] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[26] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[17] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
+INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[8] to constant 0 [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/blk_mem_gen_v8_3_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:183803]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 1237.242 ; gain = 376.070 ; free physical = 1131 ; free virtual = 6018
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:06 ; elapsed = 00:02:06 . Memory (MB): peak = 1237.246 ; gain = 376.070 ; free physical = 416 ; free virtual = 5375
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -712,37 +712,37 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.runs/STORE_DISPARITY_IMAGE_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.runs/STORE_DISPARITY_IMAGE_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.runs/STORE_DISPARITY_IMAGE_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.runs/STORE_DISPARITY_IMAGE_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1320.258 ; gain = 0.000 ; free physical = 1029 ; free virtual = 5962
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1320.262 ; gain = 1.000 ; free physical = 369 ; free virtual = 5329
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10588 
+INFO: Helper process launched with PID 13687 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:06 ; elapsed = 00:02:11 . Memory (MB): peak = 1320.258 ; gain = 459.086 ; free physical = 1025 ; free virtual = 5958
+Finished Constraint Validation : Time (s): cpu = 00:02:21 ; elapsed = 00:02:22 . Memory (MB): peak = 1320.262 ; gain = 459.086 ; free physical = 1060 ; free virtual = 5974
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:06 ; elapsed = 00:02:11 . Memory (MB): peak = 1320.258 ; gain = 459.086 ; free physical = 1025 ; free virtual = 5958
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:21 ; elapsed = 00:02:22 . Memory (MB): peak = 1320.262 ; gain = 459.086 ; free physical = 1060 ; free virtual = 5974
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:06 ; elapsed = 00:02:11 . Memory (MB): peak = 1320.258 ; gain = 459.086 ; free physical = 1025 ; free virtual = 5958
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:21 ; elapsed = 00:02:22 . Memory (MB): peak = 1320.262 ; gain = 459.086 ; free physical = 1060 ; free virtual = 5974
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:06 ; elapsed = 00:02:11 . Memory (MB): peak = 1320.258 ; gain = 459.086 ; free physical = 1023 ; free virtual = 5957
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:22 ; elapsed = 00:02:22 . Memory (MB): peak = 1320.262 ; gain = 459.086 ; free physical = 1060 ; free virtual = 5973
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -773,14 +773,14 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:06 ; elapsed = 00:02:11 . Memory (MB): peak = 1320.266 ; gain = 459.094 ; free physical = 1022 ; free virtual = 5957
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:22 ; elapsed = 00:02:23 . Memory (MB): peak = 1320.270 ; gain = 459.094 ; free physical = 1060 ; free virtual = 5973
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 1320.266 ; gain = 459.094 ; free physical = 1024 ; free virtual = 5959
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:22 ; elapsed = 00:02:23 . Memory (MB): peak = 1320.270 ; gain = 459.094 ; free physical = 1062 ; free virtual = 5976
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 1320.266 ; gain = 459.094 ; free physical = 1024 ; free virtual = 5959
+Finished Parallel Reinference  : Time (s): cpu = 00:02:22 ; elapsed = 00:02:23 . Memory (MB): peak = 1320.270 ; gain = 459.094 ; free physical = 1062 ; free virtual = 5976
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -791,9 +791,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 1320.266 ; gain = 459.094 ; free physical = 1024 ; free virtual = 5959
+Finished Area Optimization : Time (s): cpu = 00:02:22 ; elapsed = 00:02:23 . Memory (MB): peak = 1320.270 ; gain = 459.094 ; free physical = 1062 ; free virtual = 5976
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 1320.266 ; gain = 459.094 ; free physical = 1024 ; free virtual = 5959
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:22 ; elapsed = 00:02:23 . Memory (MB): peak = 1320.270 ; gain = 459.094 ; free physical = 1062 ; free virtual = 5976
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -807,24 +807,24 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:18 ; elapsed = 00:02:23 . Memory (MB): peak = 1361.258 ; gain = 500.086 ; free physical = 971 ; free virtual = 5913
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:34 ; elapsed = 00:02:34 . Memory (MB): peak = 1361.262 ; gain = 500.086 ; free physical = 1021 ; free virtual = 5934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:18 ; elapsed = 00:02:23 . Memory (MB): peak = 1361.258 ; gain = 500.086 ; free physical = 971 ; free virtual = 5913
+Finished Timing Optimization : Time (s): cpu = 00:02:34 ; elapsed = 00:02:34 . Memory (MB): peak = 1361.262 ; gain = 500.086 ; free physical = 1021 ; free virtual = 5934
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:18 ; elapsed = 00:02:23 . Memory (MB): peak = 1361.258 ; gain = 500.086 ; free physical = 971 ; free virtual = 5913
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:34 ; elapsed = 00:02:34 . Memory (MB): peak = 1361.262 ; gain = 500.086 ; free physical = 1021 ; free virtual = 5934
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:18 ; elapsed = 00:02:23 . Memory (MB): peak = 1361.258 ; gain = 500.086 ; free physical = 971 ; free virtual = 5913
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:34 ; elapsed = 00:02:34 . Memory (MB): peak = 1361.262 ; gain = 500.086 ; free physical = 1021 ; free virtual = 5934
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:18 ; elapsed = 00:02:23 . Memory (MB): peak = 1370.273 ; gain = 509.102 ; free physical = 962 ; free virtual = 5904
+Finished Technology Mapping : Time (s): cpu = 00:02:34 ; elapsed = 00:02:34 . Memory (MB): peak = 1370.277 ; gain = 509.102 ; free physical = 1012 ; free virtual = 5926
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -848,7 +848,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 1370.273 ; gain = 509.102 ; free physical = 962 ; free virtual = 5904
+Finished IO Insertion : Time (s): cpu = 00:02:34 ; elapsed = 00:02:35 . Memory (MB): peak = 1370.277 ; gain = 509.102 ; free physical = 1012 ; free virtual = 5926
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -861,7 +861,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 1370.273 ; gain = 509.102 ; free physical = 962 ; free virtual = 5904
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:34 ; elapsed = 00:02:35 . Memory (MB): peak = 1370.277 ; gain = 509.102 ; free physical = 1012 ; free virtual = 5926
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -873,25 +873,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 1370.273 ; gain = 509.102 ; free physical = 962 ; free virtual = 5904
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:34 ; elapsed = 00:02:35 . Memory (MB): peak = 1370.277 ; gain = 509.102 ; free physical = 1012 ; free virtual = 5926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 1370.273 ; gain = 509.102 ; free physical = 962 ; free virtual = 5904
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:34 ; elapsed = 00:02:35 . Memory (MB): peak = 1370.277 ; gain = 509.102 ; free physical = 1012 ; free virtual = 5926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 1370.273 ; gain = 509.102 ; free physical = 962 ; free virtual = 5904
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:34 ; elapsed = 00:02:35 . Memory (MB): peak = 1370.277 ; gain = 509.102 ; free physical = 1012 ; free virtual = 5925
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 1370.273 ; gain = 509.102 ; free physical = 962 ; free virtual = 5904
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:34 ; elapsed = 00:02:35 . Memory (MB): peak = 1370.277 ; gain = 509.102 ; free physical = 1012 ; free virtual = 5925
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -923,17 +923,17 @@ Report Instance Areas:
 |7     |            \prim_noinit.ram          |blk_mem_gen_prim_wrapper |     1|
 +------+--------------------------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 1370.273 ; gain = 509.102 ; free physical = 962 ; free virtual = 5904
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:34 ; elapsed = 00:02:35 . Memory (MB): peak = 1370.277 ; gain = 509.102 ; free physical = 1012 ; free virtual = 5925
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:09 ; elapsed = 00:02:11 . Memory (MB): peak = 1370.273 ; gain = 286.344 ; free physical = 968 ; free virtual = 5911
-Synthesis Optimization Complete : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 1370.273 ; gain = 509.102 ; free physical = 968 ; free virtual = 5911
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:23 ; elapsed = 00:02:23 . Memory (MB): peak = 1370.277 ; gain = 286.344 ; free physical = 1018 ; free virtual = 5932
+Synthesis Optimization Complete : Time (s): cpu = 00:02:35 ; elapsed = 00:02:35 . Memory (MB): peak = 1370.277 ; gain = 509.102 ; free physical = 1018 ; free virtual = 5932
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/ghazi/Desktop/master_work/BRAM_PRJ/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ghazi/Downloads/master_work/BRAM_PRJ_/BRAM_PRJ.srcs/sources_1/ip/STORE_DISPARITY_IMAGE/STORE_DISPARITY_IMAGE_ooc.xdc] for cell 'U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
@@ -941,7 +941,7 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 45 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:02:23 . Memory (MB): peak = 1370.273 ; gain = 423.750 ; free physical = 967 ; free virtual = 5911
+synth_design: Time (s): cpu = 00:02:33 ; elapsed = 00:02:33 . Memory (MB): peak = 1370.277 ; gain = 423.750 ; free physical = 1018 ; free virtual = 5932
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1378.277 ; gain = 0.000 ; free physical = 966 ; free virtual = 5911
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 31 22:31:12 2017...
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1378.281 ; gain = 0.000 ; free physical = 1018 ; free virtual = 5931
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  1 22:58:54 2017...

@@ -143,13 +143,13 @@ module axi_master #(
 /////edge detection for enabling AWVALID signal it's a hack hope it works
 reg  edge_en;
 reg  edge_en_prev;
-wire en;
-reg en_reg;
+wire selection_finished;
+reg  selection_finished_reg;
 always @(posedge M_AXI_ACLK)
 begin
-        en_reg      <=    en;
-        edge_en_prev<=  en_reg;
-        if({edge_en_prev,en}==2'b01)   begin
+        selection_finished_reg <=  selection_finished;
+        edge_en_prev<=  selection_finished_reg;
+        if({edge_en_prev,selection_finished_reg}==2'b01)   begin
         
                        
                       edge_en<=1'b1;//detect the ending of processing of  the last row
@@ -920,7 +920,7 @@ TOP TOP_INSTANCE(
 /////////////////////////////////////////////////////////////////////////
             .data_ack(data_ack), 
             .min_value_disparity_1_row(min_value_disparity_1_row),
-            .selection_finished_en(en)
+            .enable_axi_interface(selection_finished)
 
 );
 endmodule
